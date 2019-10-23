@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "El Caso Mumford",
+  "short_name": "El Caso Mumford",
+  "version": "com.raulalvarez.mumfordapp",
+  "description": "Aplicación para la reproducción de audios de la exposición de El Caso Mumford",
+  "author": "Raul Alvarez",
+  "icons": [],
+  "start_url": "index.html"
+}
