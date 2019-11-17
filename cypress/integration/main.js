@@ -6,7 +6,7 @@ context('Index', () => {
 	// });
 
 	it('Intro', () => {
-		cy.visit('localhost:8005/index.html');
+		cy.visit('./www/index.html');
 		cy.get('#start').should('be.visible');
 		// cy.wait(3000);
 		cy.get('#start').click();
