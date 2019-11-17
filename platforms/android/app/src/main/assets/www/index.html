@@ -22,13 +22,13 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
-    <!-- Good default declaration:
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+	<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+	<!-- Good default declaration:
     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
     * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
     * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
@@ -36,34 +36,63 @@
         * Enable eval(): add 'unsafe-eval' to default-src
     * Create your own at http://cspisawesome.com
     -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>El Caso Mumford</title>
+	<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<title>El Caso Mumford</title>
 </head>
 
 <body>
-    <div class="app">
-    	<div class="topLine"></div>
-    	<div class="logo"></div>
-    	<div class="opacity2s intro">
-    		Un cadáver ha sido hallado en el <br>
+	<div class="app">
+		<div id="topLine"></div>
+		<div id="logo"></div>
+		<div id="personajes"></div>
+	</div>
+	<div id="page0" class="contenedor">
+		<div class="opacity2s intro">
+			Un cadáver ha sido hallado en el <br>
 			hotel “Guilor”<br>
 			¿Quien cometió el crimen?<br><br>
-
 			Un hotel, una escena del crimen y 10 sospechosos. <br><br>
-    		Éstos son todos los ingredientes para comenzar el juego. Un nuevo concepto de exposición interactiva donde te convertirás en detective. Sigue las pistas y resuelve el misterio, descubre quién cometió el crimen.
-    	</div>
-    	<div id="start" class="opacity2s button" onclick="app.start()">Empezar</div>
-    	<div id="play" class="opacity2s button">Jugar</div>
-    	<div class="personajes"></div>
-    </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
+			Éstos son todos los ingredientes para comenzar el juego. Un nuevo concepto de exposición interactiva donde te convertirás en detective. Sigue las pistas y resuelve el misterio, descubre quién cometió el crimen.
+		</div>
+		<div id="start" class="opacity2s button" onclick="app.start()">Empezar</div>
+	</div>
+	<div id="page1" class="contenedor hidden">
+		<div id="" class="title">Elige una<br></div>
+		<div id="" class="title2">OPCIÓN</div>
+		<div id="play" class=" button" onclick="app.play()">Jugar</div>
+		<div id="listen" class=" button">Exposición</div>
+	</div>
+	<div id="page2" class="contenedor hidden">
+		<div id="" class="title">Comienza el<br></div>
+		<div id="" class="title2">JUEGO</div>
+		<div class="description">Esta exposición plantea un enigma, un reto, convirtiendote en detective y las imágenes en las piezas del puzzle que debes resolver.<br>
+			Observa los detalles, sigue las pistas y testimonios, y ayuda al detective Johnson a resolver el crimen.</div>
+		<audio class="player" controls="controls">
+			<source src="ambiente.mp3" type="audio/mpeg" />
+			Your browser does not support the audio element.
+		</audio>
+		<div id="b1" class="small button">1</div>
+		<div id="b2" class="small button">2</div>
+		<div id="b3" class="small button">3</div>
+		<div id="b4" class="small button">4</div>
+		<div id="b5" class="small button">5</div>
+		<div id="b6" class="small button">6</div>
+		<div id="b7" class="small button">7</div>
+		<div id="b8" class="small button">8</div>
+		<div id="b9" class="small button">9</div>
+		<div id="b10" class="small button">10</div>
+		<div id="b11" class="small button">11</div>
+		<div id="b12" class="small button">12</div>
+	</div>
+	</div>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+	app.initialize();
+
+	</script>
 </body>
 
 </html>
