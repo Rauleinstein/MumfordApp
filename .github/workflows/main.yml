@@ -17,10 +17,9 @@ jobs:
         ini-values-csv: post_max_size=256M, short_open_tag=On #optional, setup php.ini configuration
         coverage: xdebug #optional, setup coverage driver
         pecl: true #optional, setup PECL
-    - name: CD www
-      uses: cd www
     - name: Setup php server
       uses: php -S 127.0.0.1:8005 &
+      working-directory: ./www
     - name: Cypress.io
       uses: cypress-io/github-action@v1.5.0
 
