@@ -42,8 +42,8 @@ var app = {
 	receivedEvent: function(id) {},
 	beginIntro: function() {
 		$('#logo').addClass('small');
-		$('.intro').addClass('show');
-		$('#start').addClass('show');
+		$('.intro').fadeIn(2000);
+		$('#start').fadeIn(2000);
 	},
 	start: function() {
 		$('#page0').fadeOut('slow', function() {
@@ -57,41 +57,6 @@ var app = {
 			$('#personajes').fadeOut('slow');
 			$('.title').addClass('top');
 			$('.title2').addClass('top');
-			// console.log(Media);
-			// var url = 'file://' + getPhoneGapPath() + 'ambiente.mp3';
-			// var my_media = new Media(url,
-			// 	// success callback
-			// 	function() {
-			// 		console.log("playAudio():Audio Success");
-			// 	},
-			// 	// error callback
-			// 	function(err) {
-			// 		console.log("playAudio():Audio Error: " + err);
-			// 	}
-			// );
-			// Play audio
-			// my_media.play();
-			// var dur = -1;
-			// // Update media position every second
-			// var mediaTimer = setInterval(function() {
-			// 	// get media position
-			// 	if (dur < 0) {
-			// 		dur = my_media.getDuration();
-			// 	}
-			// 	console.log(dur+" seg");
-			// 	my_media.getCurrentPosition(
-			// 		// success callback
-			// 		function(position) {
-			// 			if (position > -1) {
-			// 				console.log((position/dur*100) + " %");
-			// 			}
-			// 		},
-			// 		// error callbackss
-			// 		function(e) {
-			// 			console.log("Error getting pos=" + e);
-			// 		}
-			// 	);
-			// }, 1000);
 		});
 	}
 
