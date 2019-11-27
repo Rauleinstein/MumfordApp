@@ -129,24 +129,24 @@ body {
 
 #play {
     position: relative;
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
     width: 150px;
-    top: 12em;
+    top: 14em;
     height: 150px;
     left: 20px;
-    line-height: 150px;
     text-transform: uppercase;
     font-size: 20px;
 }
 
 #listen {
     position: relative;
-    display: inline-block;
+	display: table-cell;
+    vertical-align: middle;
     width: 150px;
-    top: 12em;
+    top: 14em;
     left: 13%;
     height: 150px;
-    line-height: 150px;
     text-transform: uppercase;
     font-size: 20px;
 }
@@ -284,4 +284,8 @@ h1 {
     margin: 0 auto;
     text-align: center;
     font-family: trendaextralight;
+}
+
+#p1.description{
+	top:33%;
 }
