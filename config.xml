@@ -10,7 +10,7 @@
     <content src="index.html" />
 	<icon src="www/faviconMumford.png" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="Fullscreen" value="true" />
+    <!-- <preference name="Fullscreen" value="true" /> -->
 	<preference name="AndroidLaunchMode" value="singleInstance" />
 	<preference name="DisallowOverscroll" value="true" />
 	<preference name="KeepRunning" value="true" />
