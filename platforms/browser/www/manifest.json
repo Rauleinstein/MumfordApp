@@ -6,6 +6,12 @@
   "version": "com.raulalvarez.mumfordapp",
   "description": "Aplicación para la reproducción de audios de la exposición de El Caso Mumford",
   "author": "Raul Alvarez",
-  "icons": [],
+  "icons": [
+    {
+      "src": "www/faviconMumford.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
   "start_url": "index.html"
 }
