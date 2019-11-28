@@ -25,7 +25,8 @@
 	<meta charset="utf-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="msapplication-tap-highlight" content="no" />
-	<meta name=”viewport” content=”initial-scale=1, width=device-width, height=device-height, viewport-fit=cover”>
+	<!-- <meta name=”viewport” content=”initial-scale=1, width=device-width, height=device-height, viewport-fit=cover”> -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
 	<!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
 	<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
 	<!-- Good default declaration:
@@ -37,12 +38,13 @@
     * Create your own at http://cspisawesome.com
     -->
 	<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
 	<title>El Caso Mumford</title>
 </head>
 
 <body>
-	<div class="app">
+	<div class="app container-fluid p-0">
 		<div id="topLine"></div>
 		<div id="logo"></div>
 		<div id="personajes"></div>
@@ -58,38 +60,54 @@
 		<div id="start" class=" button" onclick="app.start()">Empezar</div>
 	</div>
 	<div id="page1" class="contenedor hidden">
-		<div id="" class="title">Elige una<br></div>
-		<div id="" class="title2">OPCIÓN</div>
+		<div id="menu-title" class="row">
+			<div id="" class="title">Elige una<br></div>
+			<div id="" class="title2">OPCIÓN</div>
+		</div>
 		<div id="p1" class="description">Tienes dos formas de ver la exposición y disfrutar de esta experiencia. <br> ¿Como quieres descubrir el misterio?</div>
-		<div id="play" class=" button" onclick="app.play()">Quiero <br> Jugar</div>
-		<div id="listen" class=" button">Quiero <br> Escucharlo</div>
+		<div class="row">
+			<div id="play" class="col button align-self-center" onclick="app.play()">Quiero <br> Jugar</div>
+			<div id="listen" class="col button align-self-center">Quiero <br> Escucharlo</div>
+		</div>
 	</div>
 	<div id="page2" class="contenedor hidden">
-		<div id="" class="title">Comienza el<br></div>
-		<div id="" class="title2">JUEGO</div>
-		<div class="description">Esta exposición plantea un enigma, un reto, convirtiendote en detective y las imágenes en las piezas del puzzle que debes resolver.<br>
-			Observa los detalles, sigue las pistas y testimonios, y ayuda al detective Johnson a resolver el crimen.</div>
-		<audio class="player" controls="controls">
-			<source src="ambiente.mp3" type="audio/mpeg" />
-			Your browser does not support the audio element.
-		</audio>
-		<div id="b0" class="huge button">Introducción</div>
-		<div id="b1" class="small button">1</div>
-		<div id="b2" class="small button">2</div>
-		<div id="b3" class="small button">3</div>
-		<div id="b4" class="small button">4</div>
-		<div id="b5" class="small button">5</div>
-		<div id="b6" class="small button">6</div>
-		<div id="b7" class="small button">7</div>
-		<div id="b8" class="small button">8</div>
-		<div id="b9" class="small button">9</div>
-		<div id="b10" class="small button">10</div>
-		<div id="b11" class="small button">11</div>
-		<div id="b12" class="small button">12</div>
+		<div id="main-title" class="row">
+			<div id="" class="title">Comienza el<br></div>
+			<div id="" class="title2">JUEGO</div>
+		</div>
+		<div class="row">
+			<div class="description">Esta exposición plantea un enigma, un reto, convirtiendote en detective y las imágenes en las piezas del puzzle que debes resolver.<br>
+				Observa los detalles, sigue las pistas y testimonios, y ayuda al detective Johnson a resolver el crimen.</div>
+			<audio class="player" controls="controls">
+				<source src="ambiente.mp3" type="audio/mpeg" />
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+			<!-- <div id="b0" class="huge button">Introducción</div> -->
+		<div class="row botonera">
+			<div id="b1" class="col small button">1</div>
+			<div id="b2" class="col small button">2</div>
+			<div id="b3" class="col small button">3</div>
+			<div id="b4" class="col small button">4</div>
+		</div>
+		<div class="row botonera">
+			<div id="b5" class="col small button">5</div>
+			<div id="b6" class="col small button">6</div>
+			<div id="b7" class="col small button">7</div>
+			<div id="b8" class="col small button">8</div>
+		</div>
+		<div class="row botonera">
+			<div id="b9" class="col small button">9</div>
+			<div id="b10" class="col small button">10</div>
+			<div id="b11" class="col small button">11</div>
+			<div id="b12" class="col small button">12</div>
+		</div>
 	</div>
+
 	</div>
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript">
 		app.initialize();
