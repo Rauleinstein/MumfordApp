@@ -195,6 +195,19 @@ body {
     left: 20px;
 }
 
+.button.huge {
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    position: relative;
+    margin: 10px 5px;
+    display: inline-block;
+    top: 100px;
+    left: 20px;
+}
+
+
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
