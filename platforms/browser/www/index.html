@@ -67,7 +67,7 @@
 		<div id="p1" class="description">Tienes dos formas de ver la exposición y disfrutar de esta experiencia. <br> ¿Como quieres descubrir el misterio?</div>
 		<div class="row">
 			<div id="play" class="col button align-self-center" onclick="app.play()">Quiero <br> Jugar</div>
-			<div id="listen" class="col button align-self-center">Quiero <br> Escucharlo</div>
+			<div id="listen" class="col button align-self-center">Quiero <br> Escuchar</div>
 		</div>
 	</div>
 	<div id="page2" class="contenedor hidden">
@@ -78,29 +78,33 @@
 		<div class="row">
 			<div class="description">Esta exposición plantea un enigma, un reto, convirtiendote en detective y las imágenes en las piezas del puzzle que debes resolver.<br>
 				Observa los detalles, sigue las pistas y testimonios, y ayuda al detective Johnson a resolver el crimen.</div>
-			<audio class="player" controls="controls">
-				<source src="ambiente.mp3" type="audio/mpeg" />
-				Your browser does not support the audio element.
-			</audio>
-		</div>
-			<!-- <div id="b0" class="huge button">Introducción</div> -->
-		<div class="row botonera">
-			<div id="b1" class="col small button">1</div>
-			<div id="b2" class="col small button">2</div>
-			<div id="b3" class="col small button">3</div>
-			<div id="b4" class="col small button">4</div>
 		</div>
 		<div class="row botonera">
+			<div id="b0" onclick="app.playIntro()" class="col huge button">Introducción</div>
+		</div>
+		<div class="row botonera hidden">
+			<div id="b1" onclick="app.playAudio(1)" class="col small button">1</div>
+			<div id="b2" onclick="app.playAudio(2)" class="col small button">2</div>
+			<div id="b3" onclick="app.playAudio(3)" class="col small button">3</div>
+			<div id="b4" onclick="app.playAudio(4)" class="col small button">4</div>
+		</div>
+		<div class="row botonera hidden">
 			<div id="b5" class="col small button">5</div>
 			<div id="b6" class="col small button">6</div>
 			<div id="b7" class="col small button">7</div>
 			<div id="b8" class="col small button">8</div>
 		</div>
-		<div class="row botonera">
+		<div class="row botonera hidden">
 			<div id="b9" class="col small button">9</div>
 			<div id="b10" class="col small button">10</div>
 			<div id="b11" class="col small button">11</div>
 			<div id="b12" class="col small button">12</div>
+		</div>
+		<div class="row">
+			<audio id="player" class="col-11 m-auto" controls="controls">
+				<source src="audio/audio0.ogg" type="audio/mpeg" />
+				Your browser does not support the audio element.
+			</audio>
 		</div>
 	</div>
 

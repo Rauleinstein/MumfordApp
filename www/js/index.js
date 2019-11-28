@@ -20,6 +20,7 @@ var app = {
 	// Application Constructor
 	initialize: function() {
 		this.bindEvents();
+		var player = document.getElementById("player");
 		setTimeout(function() {
 			app.beginIntro();
 		}, 2000);
@@ -46,18 +47,42 @@ var app = {
 		$('#start').fadeIn(2000);
 	},
 	start: function() {
+		$('#start').addClass('pressed');
 		$('#page0').fadeOut('slow', function() {
 			$('#page1').fadeIn('slow');
 		});
 	},
 	play: function() {
+		$('#play').addClass('pressed');
 		$('#page1').fadeOut('slow', function() {
 			$('#page2').fadeIn('slow');
 			$('#logo').fadeOut('slow');
 			$('#personajes').fadeOut('slow');
 			$('.title').addClass('top');
 			$('.title2').addClass('top');
+			$('.button').on('click', function() {
+				event.preventDefault();
+				$(this).addClass('pressed');
+				var notClicked =  $('.button').not(this);
+				notClicked.removeClass('pressed');
+			});
 		});
+	},
+
+	playIntro: function () {
+		player.play();
+		player.onended = function() {
+			$('.botonera').toggleClass('hidden');
+		};
+	},
+
+	playAudio: function (numberAudio) {
+		console.log("Loading "+'audio/audio'+numberAudio+'.ogg');
+		player.src = 'audio/audio'+numberAudio+'.ogg';
+		player.load();
+		player.play();
+		player.onended = function() {
+		};
 	}
 
 };

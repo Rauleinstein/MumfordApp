@@ -32,12 +32,12 @@ body {
 	width: 100%;
 }
 
-.contenedor{
-    background-color: transparent;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+.contenedor {
+	background-color: transparent;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
 #topLine {
@@ -71,14 +71,12 @@ body {
 
 .intro {
 	display: none;
-	/*opacity: 0;*/
 	font-size: 16px;
 	position: relative;
-	width: 75%;
+	width: 100%;
 	top: 25%;
 	margin: 0 auto;
-	padding: 10px;
-	/*background-color: var(--accent-color);*/
+	padding: 10px 20px;
 	text-align: center;
 }
 
@@ -91,7 +89,8 @@ body {
 }
 
 .show {
-	display: block; /*TODO: Se ve al iniciar */
+	display: block;
+	/*TODO: Se ve al iniciar */
 	opacity: 1 !important;
 }
 
@@ -108,11 +107,11 @@ body {
 	font-size: 20px;
 }
 
-#menu-title{
+#menu-title {
 	margin-top: 50%;
 }
 
-#main-title{
+#main-title {
 	margin-top: 15%;
 }
 
@@ -122,15 +121,15 @@ body {
 	padding-left: 30px;
 	font-size: 30px;
 	font-family: trendaextralight;
-	background-image: linear-gradient(left, transparent 60px,rgba(171,144,129,.5) 60px, rgba(171,144,129,.5) 100%);
-    background-image: -webkit-linear-gradient(left, transparent 60px,rgba(171,144,129,.5) 60px, rgba(171,144,129,.5) 100%);
-    background-image: -moz-linear-gradient(left, transparent 60px,rgba(171,144,129,.5) 60px, rgba(171,144,129,.5) 100%);
-    background-image: -ms-linear-gradient(left, transparent 60px,rgba(171,144,129,.5) 60px, rgba(171,144,129,.5) 100%);
-    background-image: -o-linear-gradient(left, transparent 60px,rgba(171,144,129,.5) 60px, rgba(171,144,129,.5) 100%);
+	background-image: linear-gradient(left, transparent 60px, rgba(171, 144, 129, .5) 60px, rgba(171, 144, 129, .5) 100%);
+	background-image: -webkit-linear-gradient(left, transparent 60px, rgba(171, 144, 129, .5) 60px, rgba(171, 144, 129, .5) 100%);
+	background-image: -moz-linear-gradient(left, transparent 60px, rgba(171, 144, 129, .5) 60px, rgba(171, 144, 129, .5) 100%);
+	background-image: -ms-linear-gradient(left, transparent 60px, rgba(171, 144, 129, .5) 60px, rgba(171, 144, 129, .5) 100%);
+	background-image: -o-linear-gradient(left, transparent 60px, rgba(171, 144, 129, .5) 60px, rgba(171, 144, 129, .5) 100%);
 
 }
 
-.title2{
+.title2 {
 	padding-left: 80px;
 	font-family: trendaregular;
 	position: relative;
@@ -139,26 +138,27 @@ body {
 }
 
 #play {
-    position: relative;
-    display: table-cell;
-    vertical-align: middle;
-    height: 150px;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin: 0px 10px 0px 30px;
-    padding-top: 45px;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	height: 150px;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 0px 10px 0px 30px;
+	padding-top: 45px;
 }
 
 #listen {
-    position: relative;
+	position: relative;
 	display: table-cell;
-    vertical-align: middle;
-    height: 150px;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin: 0px 30px 0px 10px;
-    padding-top: 45px;
+	vertical-align: middle;
+	height: 150px;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 0px 30px 0px 10px;
+	padding-top: 45px;
 }
+
 #personajes {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -182,21 +182,21 @@ body {
 }
 
 .button.small {
-    height: 50px;
-    line-height: 50px;
-    font-size: 25px;
-    position: relative;
-    margin: 0 5px 0 5px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 25px;
+	position: relative;
+	margin: 0 5px 0 5px;
 }
 
 .button.huge {
-    width: 70px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 25px;
-    position: relative;
-    margin: 10px 5px;
-    display: inline-block;
+	width: 70px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 25px;
+	position: relative;
+	margin: 10px 5px;
+	display: inline-block;
 }
 
 .botonera {
@@ -215,66 +215,6 @@ body {
 	}
 }
 
-h1 {
-	font-size: 24px;
-	font-weight: normal;
-	margin: 0px;
-	overflow: visible;
-	padding: 0px;
-	text-align: center;
-}
-
-.event {
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	color: #FFFFFF;
-	font-size: 12px;
-	margin: 0px 30px;
-	padding: 2px 0px;
-}
-
-.event.listening {
-	background-color: #333333;
-	display: block;
-}
-
-.event.received {
-	background-color: #4B946A;
-	display: none;
-}
-
-@keyframes fade {
-	from {
-		opacity: 1.0;
-	}
-
-	50% {
-		opacity: 0.4;
-	}
-
-	to {
-		opacity: 1.0;
-	}
-}
-
-@-webkit-keyframes fade {
-	from {
-		opacity: 1.0;
-	}
-
-	50% {
-		opacity: 0.4;
-	}
-
-	to {
-		opacity: 1.0;
-	}
-}
-
-.blink {
-	animation: fade 3000ms infinite;
-	-webkit-animation: fade 3000ms infinite;
-}
 
 .hidden {
 	display: none;
@@ -282,16 +222,31 @@ h1 {
 
 .player {
 	position: relative;
-    width: 90%;
-    left: 5%;
+	width: 90%;
+	left: 5%;
+}
+
+.pressed {
+	-webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+	-moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+	box-shadow: inset 0px 0px 5px #c1c1c1;
 }
 
 .description {
 	font-size: 16px;
 	position: relative;
-    width: 80%;
-    margin: 20px auto;
-    text-align: center;
-    font-family: trendaextralight;
+	width: 80%;
+	margin: 20px auto;
+	text-align: center;
+	font-family: trendaextralight;
 }
 
+@media (max-height: 650px) {
+	.intro {
+		font-size: 12px;
+	}
+
+	.description {
+		font-size: 12px;
+	}
+}
