@@ -141,22 +141,20 @@ body {
 	position: relative;
 	display: table-cell;
 	vertical-align: middle;
-	height: 150px;
 	text-transform: uppercase;
 	font-size: 20px;
 	margin: 0px 10px 0px 30px;
-	padding-top: 45px;
+	padding: 20px;
 }
 
 #listen {
 	position: relative;
 	display: table-cell;
 	vertical-align: middle;
-	height: 150px;
 	text-transform: uppercase;
 	font-size: 20px;
 	margin: 0px 30px 0px 10px;
-	padding-top: 45px;
+	padding: 20px;
 }
 
 #personajes {
@@ -216,9 +214,7 @@ body {
 }
 
 
-.hidden {
-	display: none;
-}
+
 
 .player {
 	position: relative;
@@ -238,8 +234,88 @@ body {
 	width: 80%;
 	margin: 20px auto;
 	text-align: center;
-	font-family: trendaextralight;
+	font-family: trendalight;
 }
+
+.suspect {
+	margin: 10px;
+	width: 19.5vw;
+	height: 16vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+#who {
+	font-size: 20px;
+	margin-bottom: 2vh;
+}
+
+.susbig {
+	width: 50vh;
+    height: 80vh;
+    opacity: 0;
+    position: absolute;
+    top: 10vh;
+    left: 3vw;
+    z-index: -1;
+}
+
+
+
+#suspect1 {
+	background-image: url('../img/suspect1.png');
+}
+#suspect2 {
+	background-image: url('../img/suspect2.png');
+}
+#suspect3 {
+	background-image: url('../img/suspect3.png');
+}
+#suspect4 {
+	background-image: url('../img/suspect4.png');
+}
+#suspect5 {
+	background-image: url('../img/suspect5.png');
+}
+#suspect6 {
+	background-image: url('../img/suspect6.png');
+}
+#suspect7 {
+	background-image: url('../img/suspect7.png');
+}
+#suspect8 {
+	background-image: url('../img/suspect8.png');
+}
+#suspect9 {
+	background-image: url('../img/suspect9.png');
+}
+#suspect10 {
+	background-image: url('../img/suspect10.png');
+}
+
+.center {
+	text-align: center;
+}
+
+#confirmation {
+    background: var(--accent-color);
+    text-align: center;
+    top: 45vh;
+    width: 60vw;
+    position: absolute;
+    margin: 0 auto;
+    left: 20vw;
+    font-size: 22px;
+    color: white;
+    padding: 10px;
+    z-index: 10;
+}
+
+.hidden {
+	display: none;
+}
+
 
 @media (max-height: 650px) {
 	.intro {
@@ -248,5 +324,6 @@ body {
 
 	.description {
 		font-size: 12px;
+		margin: 10px auto;
 	}
 }

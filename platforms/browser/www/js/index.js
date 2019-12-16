@@ -20,9 +20,18 @@ var app = {
 	// Application Constructor
 	initialize: function() {
 		this.bindEvents();
+		$('#page0').load('p0.html');
+		$('#page1').load('p1.html');
+		$('#page2').load('p2.html');
+		$('#page3').load('p3.html');
+		$('#page4').load('p4.html');
 		var player = document.getElementById("player");
 		setTimeout(function() {
-			app.beginIntro();
+			// app.beginIntro();
+			$('#page0').hide();
+			$('#logo').hide();
+			$('#personajes').hide();
+			$('#page3').removeClass('hidden');
 		}, 2000);
 	},
 	// Bind Event Listeners
@@ -83,13 +92,40 @@ var app = {
 		player.play();
 		player.onended = function() {
 		};
+	},
+
+	resolution: function () {
+		$('#page2').fadeOut('slow', function() {
+			$('#page3').fadeIn('slow');
+		});
+	},
+
+	resolution_second: function () {
+		$('#page3').fadeOut('slow', function() {
+			$('#page4').fadeIn('slow');
+		});
+	},
+
+	check_suspect: function (suspect) {
+		$('.susbig').attr('id', 'suspect'+suspect);
+		setTimeout(function() {
+			$('.susbig').css('opacity', '100');
+			$('.susbig').css('z-index', '10');
+			$('#confirmation').toggleClass('hidden');
+		}, 150);
+		if (suspect == 6) {
+			$('#confirmation').html('ES EL ASESINO');
+			$('.botonera').removeClass('hidden');
+			confetti.start();
+		}
+	},
+
+	remove_suspect: function () {
+		$('.susbig').css('opacity', '0');
+		$('.susbig').css('z-index', '-1');
+		$('#confirmation').toggleClass('hidden');
+		$('#confirmation').html('NO ES EL ASESINO');
+		confetti.stop();
 	}
 
-};
-
-function getPhoneGapPath() {
-	var path = window.location.pathname;
-	var sizefilename = path.length - (path.lastIndexOf("/") + 1);
-	path = path.substr(path, path.length - sizefilename);
-	return path;
 };

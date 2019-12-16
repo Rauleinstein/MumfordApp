@@ -49,69 +49,15 @@
 		<div id="logo"></div>
 		<div id="personajes"></div>
 	</div>
-	<div id="page0" class="contenedor">
-		<div class=" intro">
-			Un cadáver ha sido hallado en el <br>
-			hotel “Guilor”<br>
-			¿Quien cometió el crimen?<br><br>
-			Un hotel, una escena del crimen y 10 sospechosos. <br><br>
-			Éstos son todos los ingredientes para comenzar el juego. Un nuevo concepto de exposición interactiva donde te convertirás en detective. Sigue las pistas y resuelve el misterio, descubre quién cometió el crimen.
-		</div>
-		<div id="start" class=" button" onclick="app.start()">Empezar</div>
-	</div>
-	<div id="page1" class="contenedor hidden">
-		<div id="menu-title" class="row">
-			<div id="" class="title">Elige una<br></div>
-			<div id="" class="title2">OPCIÓN</div>
-		</div>
-		<div id="p1" class="description">Tienes dos formas de ver la exposición y disfrutar de esta experiencia. <br> ¿Como quieres descubrir el misterio?</div>
-		<div class="row">
-			<div id="play" class="col button align-self-center" onclick="app.play()">Quiero <br> Jugar</div>
-			<div id="listen" class="col button align-self-center">Quiero <br> Escuchar</div>
-		</div>
-	</div>
-	<div id="page2" class="contenedor hidden">
-		<div id="main-title" class="row">
-			<div id="" class="title">Comienza el<br></div>
-			<div id="" class="title2">JUEGO</div>
-		</div>
-		<div class="row">
-			<div class="description">Esta exposición plantea un enigma, un reto, convirtiendote en detective y las imágenes en las piezas del puzzle que debes resolver.<br>
-				Observa los detalles, sigue las pistas y testimonios, y ayuda al detective Johnson a resolver el crimen.</div>
-		</div>
-		<div class="row botonera">
-			<div id="b0" onclick="app.playIntro()" class="col huge button">Introducción</div>
-		</div>
-		<div class="row botonera hidden">
-			<div id="b1" onclick="app.playAudio(1)" class="col small button">1</div>
-			<div id="b2" onclick="app.playAudio(2)" class="col small button">2</div>
-			<div id="b3" onclick="app.playAudio(3)" class="col small button">3</div>
-			<div id="b4" onclick="app.playAudio(4)" class="col small button">4</div>
-		</div>
-		<div class="row botonera hidden">
-			<div id="b5" class="col small button">5</div>
-			<div id="b6" class="col small button">6</div>
-			<div id="b7" class="col small button">7</div>
-			<div id="b8" class="col small button">8</div>
-		</div>
-		<div class="row botonera hidden">
-			<div id="b9" class="col small button">9</div>
-			<div id="b10" class="col small button">10</div>
-			<div id="b11" class="col small button">11</div>
-			<div id="b12" class="col small button">12</div>
-		</div>
-		<div class="row">
-			<audio id="player" class="col-11 m-auto" controls="controls">
-				<source src="audio/audio0.ogg" type="audio/mpeg" />
-				Your browser does not support the audio element.
-			</audio>
-		</div>
-	</div>
-
-	</div>
+	<div id="page0" class="contenedor"></div>
+	<div id="page1" class="contenedor hidden"></div>
+	<div id="page2" class="contenedor hidden"></div>
+	<div id="page3" class="contenedor hidden"></div>
+	<div id="page4" class="contenedor hidden"></div>
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/confetti.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript">
 		app.initialize();
