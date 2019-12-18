@@ -237,13 +237,17 @@ body {
 	font-family: trendalight;
 }
 
-.suspect {
+.suspect, .helper {
 	margin: 10px;
 	width: 19.5vw;
 	height: 16vh;
     background-size: contain;
     background-repeat: no-repeat;
     transition: all 0.5s;
+}
+.helper {
+    transition: outline 0s;
+    background-size: cover;
 }
 
 #who {
@@ -261,36 +265,49 @@ body {
     z-index: -1;
 }
 
+.helper.medium {
+    width: 33vw;
+    margin: 10px auto;
+    height: 25vh;
+}
+
+.helper.frame {
+	outline-style: solid;
+	outline-color: var(--accent-color);
+	outline-width: medium;
+	/*border: 5px var(--accent-color) solid;*/
+}
 
 
-#suspect1 {
+
+#suspect1, #helper1 {
 	background-image: url('../img/suspect1.png');
 }
-#suspect2 {
+#suspect2, #helper2 {
 	background-image: url('../img/suspect2.png');
 }
-#suspect3 {
+#suspect3, #helper3 {
 	background-image: url('../img/suspect3.png');
 }
-#suspect4 {
+#suspect4, #helper4 {
 	background-image: url('../img/suspect4.png');
 }
-#suspect5 {
+#suspect5, #helper5 {
 	background-image: url('../img/suspect5.png');
 }
-#suspect6 {
+#suspect6, #helper6 {
 	background-image: url('../img/suspect6.png');
 }
-#suspect7 {
+#suspect7, #helper7 {
 	background-image: url('../img/suspect7.png');
 }
-#suspect8 {
+#suspect8, #helper8 {
 	background-image: url('../img/suspect8.png');
 }
-#suspect9 {
+#suspect9, #helper9 {
 	background-image: url('../img/suspect9.png');
 }
-#suspect10 {
+#suspect10, #helper0 {
 	background-image: url('../img/suspect10.png');
 }
 
@@ -310,6 +327,8 @@ body {
     color: white;
     padding: 10px;
     z-index: 10;
+    opacity: 0;
+    transition: all 0.5s;
 }
 
 .hidden {

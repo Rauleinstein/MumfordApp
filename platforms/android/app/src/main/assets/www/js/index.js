@@ -27,11 +27,11 @@ var app = {
 		$('#page4').load('p4.html');
 		var player = document.getElementById("player");
 		setTimeout(function() {
-			// app.beginIntro();
-			$('#page0').hide();
-			$('#logo').hide();
-			$('#personajes').hide();
-			$('#page3').removeClass('hidden');
+			app.beginIntro();
+			// $('#page0').hide();
+			// $('#logo').hide();
+			// $('#personajes').hide();
+			// $('#page3').removeClass('hidden');
 		}, 2000);
 	},
 	// Bind Event Listeners
@@ -111,7 +111,7 @@ var app = {
 		setTimeout(function() {
 			$('.susbig').css('opacity', '100');
 			$('.susbig').css('z-index', '10');
-			$('#confirmation').toggleClass('hidden');
+			$('#confirmation').css('opacity', '100');
 		}, 150);
 		if (suspect == 6) {
 			$('#confirmation').html('ES EL ASESINO');
@@ -123,9 +123,15 @@ var app = {
 	remove_suspect: function () {
 		$('.susbig').css('opacity', '0');
 		$('.susbig').css('z-index', '-1');
-		$('#confirmation').toggleClass('hidden');
+		$('#confirmation').css('opacity', '0');
 		$('#confirmation').html('NO ES EL ASESINO');
 		confetti.stop();
+	},
+
+	helper: function (helper) {
+		console.log($('.helper'));
+		$('.helper').removeClass('frame');
+		$('#helper'+helper).addClass('frame');
 	}
 
 };
