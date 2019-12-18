@@ -238,7 +238,7 @@ body {
 }
 
 .suspect, .helper {
-	margin: 10px;
+	margin: 2.5vw;
 	width: 19.5vw;
 	height: 16vh;
     background-size: contain;
@@ -256,7 +256,7 @@ body {
 }
 
 .susbig {
-	width: 50vh;
+	width: 95vw;
     height: 80vh;
     opacity: 0;
     position: absolute;
