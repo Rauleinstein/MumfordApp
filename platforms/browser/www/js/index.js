@@ -25,6 +25,16 @@ var app = {
 		$('#page2').load('p2.html');
 		$('#page3').load('p3.html');
 		$('#page4').load('p4.html');
+		var $img1 = $( '<img src="../img/suspect1.png">' );
+		var $img2 = $( '<img src="../img/suspect2.png">' );
+		var $img3 = $( '<img src="../img/suspect3.png">' );
+		var $img4 = $( '<img src="../img/suspect4.png">' );
+		var $img5 = $( '<img src="../img/suspect5.png">' );
+		var $img6 = $( '<img src="../img/suspect6.png">' );
+		var $img7 = $( '<img src="../img/suspect7.png">' );
+		var $img8 = $( '<img src="../img/suspect8.png">' );
+		var $img9 = $( '<img src="../img/suspect9.png">' );
+		var $img10 = $( '<img src="../img/suspect10.png">' );
 		var player = document.getElementById("player");
 		setTimeout(function() {
 			app.beginIntro();
