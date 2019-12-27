@@ -25,33 +25,21 @@ var app = {
 		$('#page2').load('p2.html');
 		$('#page3').load('p3.html');
 		$('#page4').load('p4.html');
-		var $img1 = $( '<img src="../img/suspect1.png">' );
-		$img1.trigger( 'load' );
-		var $img2 = $( '<img src="../img/suspect2.png">' );
-		$img2.trigger( 'load' );
-		var $img3 = $( '<img src="../img/suspect3.png">' );
-		$img3.trigger( 'load' );
-		var $img4 = $( '<img src="../img/suspect4.png">' );
-		$img4.trigger( 'load' );
-		var $img5 = $( '<img src="../img/suspect5.png">' );
-		$img5.trigger( 'load' );
-		var $img6 = $( '<img src="../img/suspect6.png">' );
-		$img6.trigger( 'load' );
-		var $img7 = $( '<img src="../img/suspect7.png">' );
-		$img7.trigger( 'load' );
-		var $img8 = $( '<img src="../img/suspect8.png">' );
-		$img8.trigger( 'load' );
-		var $img9 = $( '<img src="../img/suspect9.png">' );
-		$img9.trigger( 'load' );
-		var $img10 = $( '<img src="../img/suspect10.png">' );
-		$img10.trigger( 'load' );
+		$('#page5').load('p5.html');
+		$('#page6').load('p6.html');
+		$('#page7').load('p7.html');
+		$('#page8').load('p8.html');
+		$('#page9').load('p9.html');
 		var player = document.getElementById("player");
 		setTimeout(function() {
-			// app.beginIntro();
-			$('#page0').hide();
-			$('#logo').hide();
-			$('#personajes').hide();
-			$('#page3').fadeIn('slow');
+			app.beginIntro();
+			// $('#page0').hide();
+			// $('#logo').hide();
+			// $('#personajes').hide();
+			// $('#page9').show('fast');
+			// $('#page3').removeClass('opacity0');
+			// $('.suspect:not(.susbig)').removeClass('opacity0');
+
 		}, 2000);
 	},
 	// Bind Event Listeners
@@ -60,12 +48,16 @@ var app = {
 	// 'load', 'deviceready', 'offline', and 'online'.
 	bindEvents: function() {
 		document.addEventListener('deviceready', this.onDeviceReady, false);
+		document.addEventListener('backbutton', this.onBackButton, false);
 	},
 	// deviceready Event Handler
 	//
 	// The scope of 'this' is the event. In order to call the 'receivedEvent'
 	// function, we must explicitly call 'app.receivedEvent(...);'
 	onDeviceReady: function() {
+		// app.receivedEvent('deviceready');
+	},
+	onBackButton: function() {
 		// app.receivedEvent('deviceready');
 	},
 	// Update DOM on a Received Event
@@ -99,9 +91,11 @@ var app = {
 	},
 
 	playIntro: function () {
+		$('#player').fadeIn('fast');
 		player.play();
 		player.onended = function() {
-			$('.botonera').toggleClass('hidden');
+			$('#page2 > .botonera').css("display", "flex").hide().fadeIn('slow');
+			$('#b0').hide();
 		};
 	},
 
@@ -116,42 +110,72 @@ var app = {
 
 	resolution: function () {
 		$('#page2').fadeOut('slow', function() {
-			$('#page3').fadeIn('slow');
-		});
-	},
-
-	resolution_second: function () {
-		$('#page3').fadeOut('slow', function() {
-			$('#page4').fadeIn('slow');
+			$('#page3').removeClass('opacity0');
+			$('.suspect:not(.susbig)').removeClass('opacity0');
 		});
 	},
 
 	check_suspect: function (suspect) {
 		$('.susbig').attr('id', 'suspect'+suspect);
 		setTimeout(function() {
-			$('.susbig').css('opacity', '100');
-			$('.susbig').css('z-index', '10');
-			$('#confirmation').css('opacity', '100');
+			$('.susbig').removeClass('opacity0');
+			$('#confirmation').removeClass('opacity0');
 		}, 150);
 		if (suspect == 6) {
+			$('.susbig').prop("onclick", null).off("click");
 			$('#confirmation').html('ES EL ASESINO');
 			$('.botonera').removeClass('hidden');
 			confetti.start();
+			setTimeout(function() {
+				confetti.stop();
+				$('#page3').fadeOut('slow', function() {
+					$('#page4').fadeIn('slow');
+					$('.suspect').fadeIn('slow');
+				});
+			}, 2000);
 		}
 	},
 
 	remove_suspect: function () {
-		$('.susbig').css('opacity', '0');
-		$('.susbig').css('z-index', '-1');
-		$('#confirmation').css('opacity', '0');
-		$('#confirmation').html('NO ES EL ASESINO');
+		$('.susbig').addClass('opacity0');
+		$('#confirmation').addClass('opacity0');
 		confetti.stop();
 	},
 
 	helper: function (helper) {
-		console.log($('.helper'));
-		$('.helper').removeClass('frame');
 		$('#helper'+helper).addClass('frame');
+		$('#page4').fadeOut('slow', function() {
+			$('#page5').fadeIn('slow');
+		});
+		localStorage.setItem('helper', helper);
+	},
+
+	key: function (key) {
+		$('#key'+key).addClass('pressed');
+		$('#page5').fadeOut('slow', function() {
+			$('#page6').fadeIn('slow');
+		});
+		localStorage.setItem('key', key);
+	},
+
+	motive: function (motive) {
+		$('#motive'+motive).addClass('pressed');
+		$('#page6').fadeOut('slow', function() {
+			$('#page7').fadeIn('slow');
+		});
+		localStorage.setItem('motive', motive);
+	},
+
+	thanks: function () {
+		$('#page7').fadeOut('slow', function() {
+			$('#page8').fadeIn('slow');
+		});
+	},
+
+	aboutUs: function () {
+		$('#page8').fadeOut('slow', function() {
+			$('#page9').fadeIn('slow');
+		});
 	}
 
 };

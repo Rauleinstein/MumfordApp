@@ -1,4 +1,4 @@
-/*  
+/*
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -86,7 +86,7 @@ namespace WPCordovaClassLib.Cordova.Commands
             /// <summary>
             /// File path
             /// </summary>
-            /// 
+            ///
             private string _fileName;
             [DataMember(Name = "fileName")]
             public string FilePath
@@ -130,7 +130,7 @@ namespace WPCordovaClassLib.Cordova.Commands
             /// <summary>
             /// Uri to get file
             /// </summary>
-            /// 
+            ///
             private string _uri;
             [DataMember(Name = "uri")]
             public string Uri
@@ -207,7 +207,7 @@ namespace WPCordovaClassLib.Cordova.Commands
             {
                 this.Encoding = "UTF-8";
                 this.FilePath = "";
-                this.FileSystemType = -1; 
+                this.FileSystemType = -1;
             }
         }
 
@@ -374,7 +374,7 @@ namespace WPCordovaClassLib.Cordova.Commands
                     throw new ArgumentException();
                 }
 
-                if(filePath.Contains(" ")) 
+                if(filePath.Contains(" "))
                 {
                     Debug.WriteLine("FilePath with spaces :: " +  filePath);
                 }
@@ -802,9 +802,9 @@ namespace WPCordovaClassLib.Cordova.Commands
                 {
                     pathToResource = pathToResource.Remove(0, 1);
                 }
-                
+
                 var resource = Application.GetResourceStream(new Uri(pathToResource, UriKind.Relative));
-                
+
                 if (resource == null)
                 {
                     DispatchCommandResult(new PluginResult(PluginResult.Status.ERROR, NOT_FOUND_ERR), callbackId);
@@ -927,7 +927,7 @@ namespace WPCordovaClassLib.Cordova.Commands
         /// <summary>
         /// Look up metadata about this entry.
         /// </summary>
-        /// <param name="options">filePath to entry</param>   
+        /// <param name="options">filePath to entry</param>
         public void getMetadata(string options)
         {
             string[] optStings = getOptionStrings(options);
@@ -1010,7 +1010,7 @@ namespace WPCordovaClassLib.Cordova.Commands
         }
 
         /// <summary>
-        /// Look up the parent DirectoryEntry containing this Entry. 
+        /// Look up the parent DirectoryEntry containing this Entry.
         /// If this Entry is the root of IsolatedStorage, its parent is itself.
         /// </summary>
         /// <param name="options"></param>
@@ -1036,8 +1036,8 @@ namespace WPCordovaClassLib.Cordova.Commands
 
                         if (isoFile.FileExists(filePath) || isoFile.DirectoryExists(filePath))
                         {
-                           
-                             
+
+
                             string path = this.GetParentDirectory(filePath);
                             entry = FileEntry.GetEntry(path);
                             DispatchCommandResult(new PluginResult(PluginResult.Status.OK, entry),callbackId);
@@ -1414,7 +1414,7 @@ namespace WPCordovaClassLib.Cordova.Commands
             string callbackId = optStrings[3];
 
             char[] invalids = Path.GetInvalidPathChars();
-            
+
             if (newFileName.IndexOfAny(invalids) > -1 || newFileName.IndexOf(":") > -1 )
             {
                 DispatchCommandResult(new PluginResult(PluginResult.Status.ERROR, ENCODING_ERR), callbackId);
@@ -1452,7 +1452,7 @@ namespace WPCordovaClassLib.Cordova.Commands
                                     : newFileName;
 
                         newPath = Path.Combine(parentPath, newName);
-                        
+
                         // sanity check ..
                         // cannot copy file onto itself
                         if (CanonicalCompare(newPath,currentPath)) //(parent + newFileName))
@@ -1460,7 +1460,7 @@ namespace WPCordovaClassLib.Cordova.Commands
                             DispatchCommandResult(new PluginResult(PluginResult.Status.ERROR, INVALID_MODIFICATION_ERR), callbackId);
                             return;
                         }
-                        else if (isoFile.DirectoryExists(newPath)) 
+                        else if (isoFile.DirectoryExists(newPath))
                         {
                             // there is already a folder with the same name, operation is not allowed
                             DispatchCommandResult(new PluginResult(PluginResult.Status.ERROR, INVALID_MODIFICATION_ERR), callbackId);
@@ -1525,7 +1525,7 @@ namespace WPCordovaClassLib.Cordova.Commands
             }
         }
 
-        private bool HandleException(Exception ex, string cbId="")
+        private bool HandleException(Exception ex, string cb )
         {
             bool handled = false;
             string callbackId = String.IsNullOrEmpty(cbId) ? this.CurrentCommandCallbackId : cbId;
@@ -1569,9 +1569,9 @@ namespace WPCordovaClassLib.Cordova.Commands
             }
 
             destDir = File.AddSlashToDirectory(destDir);
-               
+
             string[] files = isoFile.GetFileNames(path + "*");
-                
+
             if (files.Length > 0)
             {
                 foreach (string file in files)
@@ -1598,16 +1598,16 @@ namespace WPCordovaClassLib.Cordova.Commands
         }
 
         private string ResolvePath(string parentPath, string path)
-        {   
+        {
             string absolutePath = null;
-            
+
             if (path.Contains(".."))
             {
                 if (parentPath.Length > 1 && parentPath.StartsWith("/") && parentPath !="/")
                 {
                     parentPath = RemoveExtraSlash(parentPath);
                 }
-                
+
                 string fullPath = Path.GetFullPath(Path.Combine(parentPath, path));
                 absolutePath = fullPath.Replace(Path.GetPathRoot(fullPath), @"//");
             }
@@ -1725,7 +1725,7 @@ namespace WPCordovaClassLib.Cordova.Commands
                                     //using (BinaryReader br = new BinaryReader(streamInfo.Stream))
                                     //{
                                     //    byte[] data = br.ReadBytes((int)streamInfo.Stream.Length);
-                                   
+
                                     //}
 
                                 }
