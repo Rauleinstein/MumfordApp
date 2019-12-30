@@ -1,3 +1,14 @@
+! function(a) {
+		function f(a, b) { if (!(a.originalEvent.touches.length > 1)) { a.preventDefault(); var c = a.originalEvent.changedTouches[0],
+					d = document.createEvent("MouseEvents");
+				d.initMouseEvent(b, !0, !0, window, 1, c.screenX, c.screenY, c.clientX, c.clientY, !1, !1, !1, !1, 0, null), a.target.dispatchEvent(d) } } if (a.support.touch = "ontouchend" in document, a.support.touch) { var e, b = a.ui.mouse.prototype,
+				c = b._mouseInit,
+				d = b._mouseDestroy;
+			b._touchStart = function(a) { var b = this;!e && b._mouseCapture(a.originalEvent.changedTouches[0]) && (e = !0, b._touchMoved = !1, f(a, "mouseover"), f(a, "mousemove"), f(a, "mousedown")) }, b._touchMove = function(a) { e && (this._touchMoved = !0, f(a, "mousemove")) }, b._touchEnd = function(a) { e && (f(a, "mouseup"), f(a, "mouseout"), this._touchMoved || f(a, "click"), e = !1) }, b._mouseInit = function() { var b = this;
+				b.element.bind({ touchstart: a.proxy(b, "_touchStart"), touchmove: a.proxy(b, "_touchMove"), touchend: a.proxy(b, "_touchEnd") }), c.call(b) }, b._mouseDestroy = function() { var b = this;
+				b.element.unbind({ touchstart: a.proxy(b, "_touchStart"), touchmove: a.proxy(b, "_touchMove"), touchend: a.proxy(b, "_touchEnd") }), d.call(b) } } }(jQuery);
+
+
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -30,16 +41,16 @@ var app = {
 		$('#page7').load('p7.html');
 		$('#page8').load('p8.html');
 		$('#page9').load('p9.html');
+		$('#page10').load('p10.html');
 		var player = document.getElementById("player");
 		setTimeout(function() {
 			app.beginIntro();
 			// $('#page0').hide();
 			// $('#logo').hide();
 			// $('#personajes').hide();
-			// $('#page9').show('fast');
+			// $('#page10').show('fast');
 			// $('#page3').removeClass('opacity0');
 			// $('.suspect:not(.susbig)').removeClass('opacity0');
-
 		}, 2000);
 	},
 	// Bind Event Listeners
@@ -106,6 +117,12 @@ var app = {
 		player.play();
 		player.onended = function() {
 		};
+		if (numberAudio == 6) {
+			app.startPuzzle(3);
+			$('#page2').fadeOut('slow', function() {
+				$('#page10').removeClass('opacity0');
+			});
+		}
 	},
 
 	resolution: function () {
@@ -175,6 +192,32 @@ var app = {
 	aboutUs: function () {
 		$('#page8').fadeOut('slow', function() {
 			$('#page9').fadeIn('slow');
+		});
+	},
+
+	backToCredits: function () {
+		$('#page9').fadeOut('slow', function() {
+			$('#page8').fadeIn('slow');
+		});
+	},
+
+	startPuzzle: function (x) {
+		console.log("puzzle started");
+		$('#pile').height($('#source_image').height());
+		$('#puzzle_solved').hide();
+		$('#source_image').snapPuzzle({
+			rows: x,
+			columns: x,
+			pile: '#puzzle-containment',
+			containment: '#puzzle-containment',
+			onComplete: function() {
+				$('#source_image').fadeOut(150).fadeIn();
+				$('#puzzle_solved').show();
+			}
+		});
+		$(window).resize(function() {
+			$('#pile').height($('#source_image').height());
+			$('#source_image').snapPuzzle('refresh');
 		});
 	}
 

@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.raulalvarez.mumfordapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>El Caso Mumford</name>
+<widget id="com.raulalvarez.munfordapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>El Caso Munford</name>
     <description>
-        Aplicación para la reproducción de audios de la exposición de El Caso Mumford
+        Aplicación para la reproducción de audios de la exposición de El Caso Munford
     </description>
     <author email="me@raul-alvarez.es" href="http://raul-alvarez.es">
         Raul Alvarez
     </author>
     <content src="index.html" />
-	<icon src="www/faviconMumford.png" />
+	<icon src="www/faviconMunford.png" />
     <preference name="DisallowOverscroll" value="true" />
     <!-- <preference name="Fullscreen" value="true" /> -->
 	<preference name="AndroidLaunchMode" value="singleInstance" />

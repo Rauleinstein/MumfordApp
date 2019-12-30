@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.raulalvarez.mumfordapp;
+package com.raulalvarez.munfordapp;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

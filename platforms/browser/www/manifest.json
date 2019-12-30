@@ -1,14 +1,14 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "El Caso Mumford",
-  "short_name": "El Caso Mumford",
-  "version": "com.raulalvarez.mumfordapp",
-  "description": "Aplicación para la reproducción de audios de la exposición de El Caso Mumford",
+  "name": "El Caso Munford",
+  "short_name": "El Caso Munford",
+  "version": "com.raulalvarez.munfordapp",
+  "description": "Aplicación para la reproducción de audios de la exposición de El Caso Munford",
   "author": "Raul Alvarez",
   "icons": [
     {
-      "src": "www/faviconMumford.png",
+      "src": "www/faviconMunford.png",
       "type": "image/png",
       "sizes": "undefinedxundefined"
     }

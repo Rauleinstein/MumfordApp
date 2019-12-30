@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.raulalvarez.mumfordapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.raulalvarez.munfordapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <feature name="Battery">
         <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
     </feature>
@@ -35,15 +35,15 @@
     <feature name="Vibration">
         <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
     </feature>
-    <name>El Caso Mumford</name>
+    <name>El Caso Munford</name>
     <description>
-        Aplicación para la reproducción de audios de la exposición de El Caso Mumford
+        Aplicación para la reproducción de audios de la exposición de El Caso Munford
     </description>
     <author email="me@raul-alvarez.es" href="http://raul-alvarez.es">
         Raul Alvarez
     </author>
     <content src="index.html" />
-    <icon src="www/faviconMumford.png" />
+    <icon src="www/faviconMunford.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
