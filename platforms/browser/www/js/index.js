@@ -1,13 +1,28 @@
 ! function(a) {
-		function f(a, b) { if (!(a.originalEvent.touches.length > 1)) { a.preventDefault(); var c = a.originalEvent.changedTouches[0],
-					d = document.createEvent("MouseEvents");
-				d.initMouseEvent(b, !0, !0, window, 1, c.screenX, c.screenY, c.clientX, c.clientY, !1, !1, !1, !1, 0, null), a.target.dispatchEvent(d) } } if (a.support.touch = "ontouchend" in document, a.support.touch) { var e, b = a.ui.mouse.prototype,
-				c = b._mouseInit,
-				d = b._mouseDestroy;
-			b._touchStart = function(a) { var b = this;!e && b._mouseCapture(a.originalEvent.changedTouches[0]) && (e = !0, b._touchMoved = !1, f(a, "mouseover"), f(a, "mousemove"), f(a, "mousedown")) }, b._touchMove = function(a) { e && (this._touchMoved = !0, f(a, "mousemove")) }, b._touchEnd = function(a) { e && (f(a, "mouseup"), f(a, "mouseout"), this._touchMoved || f(a, "click"), e = !1) }, b._mouseInit = function() { var b = this;
-				b.element.bind({ touchstart: a.proxy(b, "_touchStart"), touchmove: a.proxy(b, "_touchMove"), touchend: a.proxy(b, "_touchEnd") }), c.call(b) }, b._mouseDestroy = function() { var b = this;
-				b.element.unbind({ touchstart: a.proxy(b, "_touchStart"), touchmove: a.proxy(b, "_touchMove"), touchend: a.proxy(b, "_touchEnd") }), d.call(b) } } }(jQuery);
-
+	function f(a, b) {
+		if (!(a.originalEvent.touches.length > 1)) {
+			a.preventDefault();
+			var c = a.originalEvent.changedTouches[0],
+				d = document.createEvent("MouseEvents");
+			d.initMouseEvent(b, !0, !0, window, 1, c.screenX, c.screenY, c.clientX, c.clientY, !1, !1, !1, !1, 0, null), a.target.dispatchEvent(d)
+		}
+	}
+	if (a.support.touch = "ontouchend" in document, a.support.touch) {
+		var e, b = a.ui.mouse.prototype,
+			c = b._mouseInit,
+			d = b._mouseDestroy;
+		b._touchStart = function(a) { var b = this;!e && b._mouseCapture(a.originalEvent.changedTouches[0]) && (e = !0, b._touchMoved = !1, f(a, "mouseover"), f(a, "mousemove"), f(a, "mousedown")) }, b._touchMove = function(a) { e && (this._touchMoved = !0, f(a, "mousemove")) }, b._touchEnd = function(a) { e && (f(a, "mouseup"), f(a, "mouseout"), this._touchMoved || f(a, "click"), e = !1) }, b._mouseInit = function() {
+			var b = this;
+			b.element.bind({ touchstart: a.proxy(b, "_touchStart"), touchmove: a.proxy(b, "_touchMove"), touchend: a.proxy(b, "_touchEnd") }), c.call(b)
+		}, b._mouseDestroy = function() {
+			var b = this;
+			b.element.unbind({ touchstart: a.proxy(b, "_touchStart"), touchmove: a.proxy(b, "_touchMove"), touchend: a.proxy(b, "_touchEnd") }), d.call(b)
+		}
+	}
+}(jQuery);
+$(function() {
+	FastClick.attach(document.body);
+});
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -95,13 +110,13 @@ var app = {
 			$('.button').on('click', function() {
 				event.preventDefault();
 				$(this).addClass('pressed');
-				var notClicked =  $('.button').not(this);
+				var notClicked = $('.button').not(this);
 				notClicked.removeClass('pressed');
 			});
 		});
 	},
 
-	playIntro: function () {
+	playIntro: function() {
 		$('#player').fadeIn('fast');
 		player.play();
 		player.onended = function() {
@@ -110,13 +125,12 @@ var app = {
 		};
 	},
 
-	playAudio: function (numberAudio) {
-		console.log("Loading "+'audio/audio'+numberAudio+'.ogg');
-		player.src = 'audio/audio'+numberAudio+'.ogg';
+	playAudio: function(numberAudio) {
+		console.log("Loading " + 'audio/audio' + numberAudio + '.mp3');
+		player.src = 'audio/audio' + numberAudio + '.mp3';
 		player.load();
 		player.play();
-		player.onended = function() {
-		};
+		player.onended = function() {};
 		if (numberAudio == 6) {
 			app.startPuzzle(3);
 			$('#page2').fadeOut('slow', function() {
@@ -125,15 +139,15 @@ var app = {
 		}
 	},
 
-	resolution: function () {
+	resolution: function() {
 		$('#page2').fadeOut('slow', function() {
 			$('#page3').removeClass('opacity0');
 			$('.suspect:not(.susbig)').removeClass('opacity0');
 		});
 	},
 
-	check_suspect: function (suspect) {
-		$('.susbig').attr('id', 'suspect'+suspect);
+	check_suspect: function(suspect) {
+		$('.susbig').attr('id', 'suspect' + suspect);
 		setTimeout(function() {
 			$('.susbig').removeClass('opacity0');
 			$('#confirmation').removeClass('opacity0');
@@ -153,55 +167,60 @@ var app = {
 		}
 	},
 
-	remove_suspect: function () {
+	remove_suspect: function() {
 		$('.susbig').addClass('opacity0');
 		$('#confirmation').addClass('opacity0');
 		confetti.stop();
 	},
 
-	helper: function (helper) {
-		$('#helper'+helper).addClass('frame');
+	helper: function(helper) {
+		$('#helper' + helper).addClass('frame');
 		$('#page4').fadeOut('slow', function() {
 			$('#page5').fadeIn('slow');
 		});
 		localStorage.setItem('helper', helper);
 	},
 
-	key: function (key) {
-		$('#key'+key).addClass('pressed');
+	key: function(key) {
+		$('#key' + key).addClass('pressed');
 		$('#page5').fadeOut('slow', function() {
 			$('#page6').fadeIn('slow');
 		});
 		localStorage.setItem('key', key);
 	},
 
-	motive: function (motive) {
-		$('#motive'+motive).addClass('pressed');
+	motive: function(motive) {
+		$('#motive' + motive).addClass('pressed');
 		$('#page6').fadeOut('slow', function() {
 			$('#page7').fadeIn('slow');
 		});
 		localStorage.setItem('motive', motive);
 	},
 
-	thanks: function () {
+	thanks: function() {
 		$('#page7').fadeOut('slow', function() {
 			$('#page8').fadeIn('slow');
 		});
 	},
 
-	aboutUs: function () {
+	aboutUs: function() {
 		$('#page8').fadeOut('slow', function() {
 			$('#page9').fadeIn('slow');
 		});
 	},
 
-	backToCredits: function () {
+	backToCredits: function() {
 		$('#page9').fadeOut('slow', function() {
 			$('#page8').fadeIn('slow');
 		});
 	},
 
-	startPuzzle: function (x) {
+	backToAudio: function() {
+		$('#page10').addClass('opacity0');
+		$('#page2').fadeIn('slow');
+	},
+
+	startPuzzle: function(x) {
 		console.log("puzzle started");
 		$('#pile').height($('#source_image').height());
 		$('#puzzle_solved').hide();

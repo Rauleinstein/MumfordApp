@@ -1,0 +1,32 @@
+<div  class="row top-message">
+	<div   class="title">Resolución del<br></div>
+	<div   class="title2">CASO</div>
+	<div id="who" class="col center">¿Quién es el asesino?</div>
+</div>
+<!-- TODO: Poner los sospechosos centrados -->
+<div id="suspects">
+	<div class="row no-gutters">
+		<div  class="col-xs-3">
+			<div id="suspect1" class="suspect opacity0" onclick="app.check_suspect(1)"></div>
+			<div id="suspect2" class="suspect opacity0" onclick="app.check_suspect(2)"></div>
+		</div>
+		<div class="col-xs-3">
+			<div id="suspect3" class="suspect opacity0" onclick="app.check_suspect(3)"></div>
+			<div id="suspect4" class="suspect opacity0" onclick="app.check_suspect(4)"></div>
+			<div id="suspect5" class="suspect opacity0" onclick="app.check_suspect(5)"></div>
+		</div>
+		<div class="col-xs-3">
+			<div id="suspect6" class="suspect opacity0" onclick="app.check_suspect(6)"></div>
+			<div id="suspect7" class="suspect opacity0" onclick="app.check_suspect(7)"></div>
+			<div id="suspect8" class="suspect opacity0" onclick="app.check_suspect(8)"></div>
+		</div>
+		<div class="col-xs-3">
+			<div id="suspect9" class="suspect opacity0" onclick="app.check_suspect(9)"></div>
+			<div id="suspect10" class="suspect opacity0" onclick="app.check_suspect(10)"></div>
+		</div>
+		<div id="suspect1" class="suspect susbig opacity0" onclick="app.remove_suspect()"></div>
+	</div>
+</div>
+<div id="confirmation" class="opacity0">
+	NO ES EL ASESINO
+</div>

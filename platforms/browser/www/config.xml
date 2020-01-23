@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.raulalvarez.munfordapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget android-versionCode="20200115" id="com.raulalvarez.munfordapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>El Caso Munford</name>
     <description>
-        Aplicación para la reproducción de audios de la exposición de El Caso Munford
-    </description>
+		Aplicación para la reproducción de audios de la exposición de El Caso Munford
+	</description>
     <author email="me@raul-alvarez.es" href="http://raul-alvarez.es">
-        Raul Alvarez
-    </author>
+		Raul Alvarez
+	</author>
     <content src="index.html" />
     <icon src="www/faviconMunford.png" />
     <access origin="*" />
@@ -19,6 +19,6 @@
     <preference name="AndroidLaunchMode" value="singleInstance" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="KeepRunning" value="true" />
-    <preference name="android-minSdkVersion" value="17" />
+    <preference name="android-minSdkVersion" value="28" />
     <preference name="orientation" value="portrait" />
 </widget>
