@@ -99,8 +99,9 @@ var app = {
 			$('#page1').fadeIn('slow');
 		});
 	},
-	play: function() {
-		$('#play').addClass('pressed');
+	play: function(mode) {
+		modo = mode;
+		$('#'+mode).addClass('pressed');
 		$('#page1').fadeOut('slow', function() {
 			$('#page2').fadeIn('slow');
 			$('#logo').fadeOut('slow');
@@ -118,6 +119,9 @@ var app = {
 
 	playIntro: function() {
 		$('#player').fadeIn('fast');
+		console.log(modo);
+		player.src = 'audio/' + modo + '0.mp3';
+		player.load();
 		player.play();
 		player.onended = function() {
 			$('#page2 > .botonera').css("display", "flex").hide().fadeIn('slow');
@@ -126,12 +130,12 @@ var app = {
 	},
 
 	playAudio: function(numberAudio) {
-		console.log("Loading " + 'audio/audio' + numberAudio + '.mp3');
-		player.src = 'audio/audio' + numberAudio + '.mp3';
+		console.log("Loading " + 'audio/'+ modo + numberAudio + '.mp3');
+		player.src = 'audio/'+ modo + numberAudio + '.mp3';
 		player.load();
 		player.play();
 		player.onended = function() {};
-		if (numberAudio == 6) {
+		if (numberAudio == 6 && modo == 'game') {
 			app.startPuzzle(3);
 			$('#page2').fadeOut('slow', function() {
 				$('#page10').removeClass('opacity0');

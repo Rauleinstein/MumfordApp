@@ -78,7 +78,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		CwtzWjAb7W239uigTChgcPIKXHM=
+		mBsQpKLgOIGI/98uWc3lClif7fw=
 		</data>
 		<key>CDVCapture.bundle/controls_bg.png</key>
 		<data>
@@ -202,11 +202,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib</key>
 		<data>
-		7bxyXbY7ZiYWrShg2mEQUuE+Dqg=
+		faVqnEnGbaDskjeFWSMX9yK4hHA=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
 		<data>
-		KKJWPxzSGD5uFCF4A8ucQ21q+Oc=
+		8QG86I0N7VjAJfZ84XR423+Vgn0=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -214,11 +214,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib</key>
 		<data>
-		Fs9ZLgLzrQPCehR19YLryXDqkug=
+		5lZxxlJ+Mcv8acTmB1wM7tyf7co=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<data>
-		QLyEW0bFgTVnEgAnXR4k7BQkwHM=
+		N7qo4YHHAqm5xY8AdgiZni6Wlzc=
 		</data>
 		<key>CDVNotification.bundle/beep.wav</key>
 		<data>
@@ -270,11 +270,11 @@
 		</data>
 		<key>MainViewController.nib/objects-13.0+.nib</key>
 		<data>
-		mBpZ/JkP6RuoET0twqe/nM+neTs=
+		gAvFfcTJdkh+3WQZM6v+gY3PsE0=
 		</data>
 		<key>MainViewController.nib/runtime.nib</key>
 		<data>
-		OfNzy1BHVXMxFAOaEzId+5vn6Mg=
+		Z8myfizAkcpkNxiZiCi4dbk/XrM=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -288,37 +288,37 @@
 		<data>
 		4elqUiZakur1oIhq2WiixJvxwJY=
 		</data>
-		<key>www/audio/audio0.mp3</key>
+		<key>www/audio/game0.mp3</key>
 		<data>
 		JCT9z+USKeqc6m/mvcX55s8qLlA=
 		</data>
-		<key>www/audio/audio0.ogg</key>
-		<data>
-		UAy5d8ywVpzGJun5RS+d2KPHuYE=
-		</data>
-		<key>www/audio/audio1.mp3</key>
+		<key>www/audio/game1.mp3</key>
 		<data>
 		5ZRNdMKM+2yf64gD/j1uiY1xknk=
 		</data>
-		<key>www/audio/audio1.ogg</key>
-		<data>
-		4yBDeob5bA5OTzPsWRk/AezpH6A=
-		</data>
-		<key>www/audio/audio2.mp3</key>
+		<key>www/audio/game2.mp3</key>
 		<data>
 		IqLEzo/4x+qPuhZ2rqZ1NWS1A6A=
 		</data>
-		<key>www/audio/audio2.ogg</key>
-		<data>
-		Fh/d0QYs5Dq50lEl1tQ/w4OyhJI=
-		</data>
-		<key>www/audio/audio3.mp3</key>
+		<key>www/audio/game3.mp3</key>
 		<data>
 		1+7I/jmrGaXX+37Zw8kEvuVxse4=
 		</data>
-		<key>www/audio/audio3.ogg</key>
+		<key>www/audio/listen0.mp3</key>
 		<data>
-		ltp3Jjn3UWT//Vl6cIjFIW5n8Xo=
+		1+7I/jmrGaXX+37Zw8kEvuVxse4=
+		</data>
+		<key>www/audio/listen1.mp3</key>
+		<data>
+		IqLEzo/4x+qPuhZ2rqZ1NWS1A6A=
+		</data>
+		<key>www/audio/listen2.mp3</key>
+		<data>
+		5ZRNdMKM+2yf64gD/j1uiY1xknk=
+		</data>
+		<key>www/audio/listen3.mp3</key>
+		<data>
+		JCT9z+USKeqc6m/mvcX55s8qLlA=
 		</data>
 		<key>www/cordova-js-src/exec.js</key>
 		<data>
@@ -398,7 +398,7 @@
 		</data>
 		<key>www/css/index.css</key>
 		<data>
-		HJSiUvRhgdTAGQXwQ0C7uUX8AWI=
+		ApT9f+b78jGWWDlhabuma1nF28Q=
 		</data>
 		<key>www/faviconMunford.png</key>
 		<data>
@@ -470,7 +470,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		+SB6c9nlPqzzkv/b+Ua+mGhcz6E=
+		R/uCeEh9kmlBnvMZ3ryJAtAlBcM=
 		</data>
 		<key>www/js/boostrap.min.js.map</key>
 		<data>
@@ -490,7 +490,7 @@
 		</data>
 		<key>www/js/index.js</key>
 		<data>
-		TKDCJVLBtkNs00YZypQi7+hQgQ0=
+		gk99XQaPIeFZ35LB+6OqySDacjg=
 		</data>
 		<key>www/js/jquery-ui.js</key>
 		<data>
@@ -510,7 +510,7 @@
 		</data>
 		<key>www/p1.html</key>
 		<data>
-		yR+5EBShJLcL1fFsFyiB/b/Ev9s=
+		iFL0sC3WkEkLyTx3qVOTzcR3mUA=
 		</data>
 		<key>www/p10.html</key>
 		<data>
@@ -1205,11 +1205,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CwtzWjAb7W239uigTChgcPIKXHM=
+			mBsQpKLgOIGI/98uWc3lClif7fw=
 			</data>
 			<key>hash2</key>
 			<data>
-			QLH/3Gte9u8/Q2q/ls0wuxsn02GL089XlCNkc+2IHFU=
+			WkFl6K24YCwUCh9DHJZQxNy9ZzlB7RE7TuK+IYUC8fI=
 			</data>
 		</dict>
 		<key>CDVCapture.bundle/controls_bg.png</key>
@@ -1499,22 +1499,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7bxyXbY7ZiYWrShg2mEQUuE+Dqg=
+			faVqnEnGbaDskjeFWSMX9yK4hHA=
 			</data>
 			<key>hash2</key>
 			<data>
-			rNz0J0mz1wTTQlGoVR8KK1eDFvj+0NuZnQ53Wro4mbc=
+			zMsgUtgl7GslHu9e1SKVLz80OkVoRyCScKgMAlToIUk=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KKJWPxzSGD5uFCF4A8ucQ21q+Oc=
+			8QG86I0N7VjAJfZ84XR423+Vgn0=
 			</data>
 			<key>hash2</key>
 			<data>
-			9RqGKndBxpnZRAt2ccHuUi4I+i+SZ9mkSeGTsaRZD2A=
+			WnJn7oW1qIWlneAqq7CkXIelrCTG+1LpTM/UUSsxLRQ=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -1532,22 +1532,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Fs9ZLgLzrQPCehR19YLryXDqkug=
+			5lZxxlJ+Mcv8acTmB1wM7tyf7co=
 			</data>
 			<key>hash2</key>
 			<data>
-			sXSbuqJWkyBI53BoRKXNYoo6yKKe+EoFUCctCA4GKtA=
+			ldvbi33+m20EedWiDINOjxfZMBy2uyu7LdA1OiFd388=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QLyEW0bFgTVnEgAnXR4k7BQkwHM=
+			N7qo4YHHAqm5xY8AdgiZni6Wlzc=
 			</data>
 			<key>hash2</key>
 			<data>
-			9bLxdURT1sJ/RnqKj4b3m/joxrOUWzAlfAfrVh+8VeE=
+			EwdtUYUNAXI2HG9e8vd5FvCrcBXytorMagEo6V+t7+Q=
 			</data>
 		</dict>
 		<key>CDVNotification.bundle/beep.wav</key>
@@ -1675,22 +1675,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mBpZ/JkP6RuoET0twqe/nM+neTs=
+			gAvFfcTJdkh+3WQZM6v+gY3PsE0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xz72MH/tSY5tv7B9iBzHl3I6st7K9OvQctYCwDcArlA=
+			h7kZIEILG+Dyqc/GJh4ay6h17ughpxIzC7JsLWg47QQ=
 			</data>
 		</dict>
 		<key>MainViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OfNzy1BHVXMxFAOaEzId+5vn6Mg=
+			Z8myfizAkcpkNxiZiCi4dbk/XrM=
 			</data>
 			<key>hash2</key>
 			<data>
-			3EQmNx0cypopkwcv/F2CCRPCy72aTwCKY3Pc08rCISU=
+			cDnNRDcpERvObt965MsfaaGwABjp+AMbRqVJWjfR9mQ=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -1715,7 +1715,7 @@
 			EI7Ibghu307Tm28kv+XIzkLGR0aZcLMcFVK0X8cbvaA=
 			</data>
 		</dict>
-		<key>www/audio/audio0.mp3</key>
+		<key>www/audio/game0.mp3</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1726,18 +1726,7 @@
 			QiFNdrNti6WgcvSYafA5rsS2xYwBrMz0xCDbvpo7Qzk=
 			</data>
 		</dict>
-		<key>www/audio/audio0.ogg</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UAy5d8ywVpzGJun5RS+d2KPHuYE=
-			</data>
-			<key>hash2</key>
-			<data>
-			wrWeB0TBXSb6e6nVq4majjEeSxrVSg1cHVnUUyB9tgI=
-			</data>
-		</dict>
-		<key>www/audio/audio1.mp3</key>
+		<key>www/audio/game1.mp3</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1748,18 +1737,7 @@
 			l2Ej2cWwNWzz9mprAoVR/i6hdmQHYO9qg3D1D9uGc7g=
 			</data>
 		</dict>
-		<key>www/audio/audio1.ogg</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4yBDeob5bA5OTzPsWRk/AezpH6A=
-			</data>
-			<key>hash2</key>
-			<data>
-			0TIaMu8V9JF9odEBRJ29QP1GlWh4tLfUy5RnBAM9/E8=
-			</data>
-		</dict>
-		<key>www/audio/audio2.mp3</key>
+		<key>www/audio/game2.mp3</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1770,18 +1748,7 @@
 			mehV5NXbyFD4yLQKZgH/7IQ3GI/l+WVRr6BvTfZfbFU=
 			</data>
 		</dict>
-		<key>www/audio/audio2.ogg</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Fh/d0QYs5Dq50lEl1tQ/w4OyhJI=
-			</data>
-			<key>hash2</key>
-			<data>
-			zvIQuYcJwxiUSvwDlcUaM9VUYzbqqkAe2B8gFNcKlXU=
-			</data>
-		</dict>
-		<key>www/audio/audio3.mp3</key>
+		<key>www/audio/game3.mp3</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1792,15 +1759,48 @@
 			qQXTIV3j+tiEXqlqCOx06gAGULv8W4CpT0EjKOp+lTk=
 			</data>
 		</dict>
-		<key>www/audio/audio3.ogg</key>
+		<key>www/audio/listen0.mp3</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ltp3Jjn3UWT//Vl6cIjFIW5n8Xo=
+			1+7I/jmrGaXX+37Zw8kEvuVxse4=
 			</data>
 			<key>hash2</key>
 			<data>
-			CycgCjYqXhwQsYw7OI5VslonND/XKdKxVsJsOltW8sE=
+			qQXTIV3j+tiEXqlqCOx06gAGULv8W4CpT0EjKOp+lTk=
+			</data>
+		</dict>
+		<key>www/audio/listen1.mp3</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IqLEzo/4x+qPuhZ2rqZ1NWS1A6A=
+			</data>
+			<key>hash2</key>
+			<data>
+			mehV5NXbyFD4yLQKZgH/7IQ3GI/l+WVRr6BvTfZfbFU=
+			</data>
+		</dict>
+		<key>www/audio/listen2.mp3</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5ZRNdMKM+2yf64gD/j1uiY1xknk=
+			</data>
+			<key>hash2</key>
+			<data>
+			l2Ej2cWwNWzz9mprAoVR/i6hdmQHYO9qg3D1D9uGc7g=
+			</data>
+		</dict>
+		<key>www/audio/listen3.mp3</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JCT9z+USKeqc6m/mvcX55s8qLlA=
+			</data>
+			<key>hash2</key>
+			<data>
+			QiFNdrNti6WgcvSYafA5rsS2xYwBrMz0xCDbvpo7Qzk=
 			</data>
 		</dict>
 		<key>www/cordova-js-src/exec.js</key>
@@ -2016,11 +2016,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HJSiUvRhgdTAGQXwQ0C7uUX8AWI=
+			ApT9f+b78jGWWDlhabuma1nF28Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			PYElHR9mRW7PMco4Lp8B4KXY2fHvnqJ1sBCE7WguAGI=
+			6sJlIQvRCPCXeeLQ6kQs+wLlIUu0qaYxqXyGLaj5C2c=
 			</data>
 		</dict>
 		<key>www/faviconMunford.png</key>
@@ -2214,11 +2214,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+SB6c9nlPqzzkv/b+Ua+mGhcz6E=
+			R/uCeEh9kmlBnvMZ3ryJAtAlBcM=
 			</data>
 			<key>hash2</key>
 			<data>
-			vyf4G0NWYlo4AnhdiolG0/lQvYX3oua4eK38dljCA2Q=
+			KWRM/jM5Nz1OKd339dUQ0iScmMs2z8Bw7lDSkm7UPNY=
 			</data>
 		</dict>
 		<key>www/js/boostrap.min.js.map</key>
@@ -2269,11 +2269,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TKDCJVLBtkNs00YZypQi7+hQgQ0=
+			gk99XQaPIeFZ35LB+6OqySDacjg=
 			</data>
 			<key>hash2</key>
 			<data>
-			bRt2oBYmA4fp9IdcsHU+9wmIimtGSu992C9X/gfP6Vk=
+			32+l7EZIQ/p+0R4IwAMFGA5FHSrtgTxB8E/Y63hVmc8=
 			</data>
 		</dict>
 		<key>www/js/jquery-ui.js</key>
@@ -2324,11 +2324,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yR+5EBShJLcL1fFsFyiB/b/Ev9s=
+			iFL0sC3WkEkLyTx3qVOTzcR3mUA=
 			</data>
 			<key>hash2</key>
 			<data>
-			xICa6VX1f+5k0/86J0Qj61xJiKYnJ4gOfNQIHGg2gjI=
+			rOAM+NVtTQ+LPrxnzV/hxVLFw1gJ/WaG8O+V3qPmG5o=
 			</data>
 		</dict>
 		<key>www/p10.html</key>
