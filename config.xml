@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.raulalvarez.munfordapp" android-versionCode="202002032" version="0.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.raulalvarez.munfordapp" android-versionCode="202002033" version="0.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 	<name>El Caso Munford</name>
 	<description>
 		Aplicación para la reproducción de audios de la exposición de El Caso Munford
