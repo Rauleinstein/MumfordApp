@@ -540,13 +540,12 @@ body {
 
 .angel {
 	background-image: url(../img/angel.png);
-	width: 45vw;
-	height: 40vh;
+	/*width: 45vw;*/
+	/*height: 40vh;*/
+	padding: 0;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-left: 5px;
-	object-fit: contain;
-
 }
 
 

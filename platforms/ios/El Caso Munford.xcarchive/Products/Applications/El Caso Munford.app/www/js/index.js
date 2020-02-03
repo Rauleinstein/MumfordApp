@@ -57,13 +57,13 @@ var app = {
 		$('#page8').load('p8.html');
 		$('#page9').load('p9.html');
 		$('#page10').load('p10.html');
-		var player = document.getElementById("player");
+		var player1 = document.getElementById("player1");
 		setTimeout(function() {
-			// app.beginIntro();
-			$('#page0').hide();
-			$('#logo').hide();
-			$('#personajes').hide();
-			$('#page7').show('fast');
+			app.beginIntro();
+			// $('#page0').hide();
+			// $('#logo').hide();
+			// $('#personajes').hide();
+			// $('#page7').show('fast');
 			// $('#page3').removeClass('opacity0');
 			// $('.suspect:not(.susbig)').removeClass('opacity0');
 		}, 2000);
@@ -102,6 +102,9 @@ var app = {
 	play: function(mode) {
 		modo = mode;
 		$('#' + mode).addClass('pressed');
+		if (modo == 'listen') {
+			$('#text-intro').html('Esta exposición plantea un enigma. Has decidido seguir los pasos del detective Johnson para que él te desvele todos los secretos. Acompaña al detective a través de la exposición y descubre a través de sus testimonios cómo descubrió al culpable.');
+		}
 		$('#page1').fadeOut('slow', function() {
 			$('#page2').fadeIn('slow');
 			$('#logo').fadeOut('slow');
@@ -118,12 +121,12 @@ var app = {
 	},
 
 	playIntro: function() {
-		$('#player').fadeIn('fast');
+		$('#player1').fadeIn('fast');
 		console.log(modo);
-		player.src = 'audio/' + modo + '0.mp3';
-		player.load();
-		player.play();
-		player.onended = function() {
+		player1.src = 'audio/' + modo + '0.mp3';
+		player1.load();
+		player1.play();
+		player1.onended = function() {
 			$('#page2 > .botonera').css("display", "flex").hide().fadeIn('slow');
 			$('#b0').hide();
 		};
@@ -131,10 +134,10 @@ var app = {
 
 	playAudio: function(numberAudio) {
 		console.log("Loading " + 'audio/' + modo + numberAudio + '.mp3');
-		player.src = 'audio/' + modo + numberAudio + '.mp3';
-		player.load();
-		player.play();
-		player.onended = function() {};
+		player1.src = 'audio/' + modo + numberAudio + '.mp3';
+		player1.load();
+		player1.play();
+		player1.onended = function() {};
 		if (numberAudio == 9 && modo == 'game') {
 			app.startPuzzle(3);
 			$('#page2').fadeOut('slow', function() {

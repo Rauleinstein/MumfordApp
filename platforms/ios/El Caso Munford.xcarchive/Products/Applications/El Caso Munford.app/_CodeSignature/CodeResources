@@ -78,7 +78,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		AsEa0bfNI53RtIT+a9lUw7gg07k=
+		prhT3ajJ2LvV9tDfnvJd53TOmaY=
 		</data>
 		<key>CDVCapture.bundle/controls_bg.png</key>
 		<data>
@@ -202,11 +202,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib</key>
 		<data>
-		sfqQi72/PwK4j2VUogVPtiRnX4A=
+		od3+YnJDw7kqAdoHQkFWiGoTZsY=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
 		<data>
-		fq1WFwwR9bjabTuHXfRR2Ls37H8=
+		o+HK65HLgTQnc5K/5YpkSxJguKw=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -214,11 +214,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib</key>
 		<data>
-		/l8W+ZOpd1M+grkil1bgRtDR2SY=
+		c4RbnskgqtMp0qyNqMRBNXVz8bM=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<data>
-		6iAcfdn4W5gDEKZWs3/0tftmX7k=
+		C0zbUZ9v7VkxRz4o/Xnzgdd/p+Q=
 		</data>
 		<key>CDVNotification.bundle/beep.wav</key>
 		<data>
@@ -226,7 +226,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8mkNGTl+u7MGnTieM1KwvOeQNik=
+		y/5vVrh3AMWZIehegExObELRGa8=
 		</data>
 		<key>LaunchImage-1100-Landscape-2436h@3x.png</key>
 		<data>
@@ -278,11 +278,11 @@
 		</data>
 		<key>MainViewController.nib/objects-13.0+.nib</key>
 		<data>
-		PHS5V3ER+9TPeOi11zPPIm/EB88=
+		Crvkmav9eZ9wgZsLBhXoGzP+xsQ=
 		</data>
 		<key>MainViewController.nib/runtime.nib</key>
 		<data>
-		O0Nne0kkSXr9NygJfXZdR+qRCII=
+		WMHbV2lQRB86aqKUh/Lu6UH4/Kg=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -290,7 +290,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		1F4tuJAoGPCsKd+hEMC9yryzpO8=
+		/4ztxRRcvkbKmj6CcjYJShDL/oE=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -406,7 +406,7 @@
 		</data>
 		<key>www/css/index.css</key>
 		<data>
-		bM4M8HLZlxnkyrLwiP6AbVJMRQk=
+		HvhyRYms7tE90oBWj+ngpPnmryY=
 		</data>
 		<key>www/faviconMunford.png</key>
 		<data>
@@ -450,7 +450,7 @@
 		</data>
 		<key>www/img/suspect3.png</key>
 		<data>
-		pubQtKoQY0m4qClfTqzV3yPnFrk=
+		0xm03TAXVb5j4YQvSTidYBf6Mf4=
 		</data>
 		<key>www/img/suspect4.png</key>
 		<data>
@@ -470,7 +470,7 @@
 		</data>
 		<key>www/img/suspect8.png</key>
 		<data>
-		36jR/BC4GK/Ty60suvImkrHPUUw=
+		pubQtKoQY0m4qClfTqzV3yPnFrk=
 		</data>
 		<key>www/img/suspect9.png</key>
 		<data>
@@ -502,7 +502,7 @@
 		</data>
 		<key>www/js/index.js</key>
 		<data>
-		+6A2bF9tWgnDXXLYlaO9rc5/NZU=
+		tmhuznQyyojB9ey1R9mw2sDJzuc=
 		</data>
 		<key>www/js/jquery-ui.js</key>
 		<data>
@@ -534,7 +534,7 @@
 		</data>
 		<key>www/p2.html</key>
 		<data>
-		sargTrb6+DePVvTk2pePc+/aNcU=
+		z0khMNGp4Hvr9OURdpnaTFmCMP4=
 		</data>
 		<key>www/p3.html</key>
 		<data>
@@ -542,7 +542,7 @@
 		</data>
 		<key>www/p4.html</key>
 		<data>
-		CVpoOGQVdBT8uAGwhjI1d8hCIOo=
+		zeZhicqA9FQkdBSBiuVpV+uApMs=
 		</data>
 		<key>www/p5.html</key>
 		<data>
@@ -554,7 +554,7 @@
 		</data>
 		<key>www/p7.html</key>
 		<data>
-		hTQXPpRx9ZC+ED0lIO/yz5SDfOA=
+		zfKNbhXTqSY66jb3aoDb7PVzE6k=
 		</data>
 		<key>www/p8.html</key>
 		<data>
@@ -562,7 +562,7 @@
 		</data>
 		<key>www/p9.html</key>
 		<data>
-		KpkbXLRtUTE+KqdyeEt+pwC8Kn0=
+		7fAmjLsnVuzXEbCQ6quTgry3Qcc=
 		</data>
 		<key>www/plugins/cordova-plugin-battery-status/www/battery.js</key>
 		<data>
@@ -1221,11 +1221,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AsEa0bfNI53RtIT+a9lUw7gg07k=
+			prhT3ajJ2LvV9tDfnvJd53TOmaY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZYm7OdxoQjQHO1jG3I9NF6REgiv4cvEe+9q1z6QCHK8=
+			JAhmf0dXtFhDNjgDSwhbb7mfOLvKY30GpsjBf/ULzrY=
 			</data>
 		</dict>
 		<key>CDVCapture.bundle/controls_bg.png</key>
@@ -1515,22 +1515,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sfqQi72/PwK4j2VUogVPtiRnX4A=
+			od3+YnJDw7kqAdoHQkFWiGoTZsY=
 			</data>
 			<key>hash2</key>
 			<data>
-			lT46nN4VFOQRFK6HIUj2+QX3N4v3FtNPKSfzNf91q5Q=
+			R71W9qcce6blGX/lo02FvRhHYg9phBMvQg2e6v0tOzM=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fq1WFwwR9bjabTuHXfRR2Ls37H8=
+			o+HK65HLgTQnc5K/5YpkSxJguKw=
 			</data>
 			<key>hash2</key>
 			<data>
-			tB30KaF3i3O92ePCEovX4cSOiNTxQzEujv/rv+wtqe0=
+			Or+i9/B3vsZBiT3PfQdItwVcfv/c5Hr+RIY8kqwejrU=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -1548,22 +1548,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/l8W+ZOpd1M+grkil1bgRtDR2SY=
+			c4RbnskgqtMp0qyNqMRBNXVz8bM=
 			</data>
 			<key>hash2</key>
 			<data>
-			TUlE6yxLbtcBgVNLT2I994sAO0wgtfslzV7AZxLUg9c=
+			W5q7KCK7PnptASkRKuePdwqUE2wHdP5NZXt3cn9yWNY=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6iAcfdn4W5gDEKZWs3/0tftmX7k=
+			C0zbUZ9v7VkxRz4o/Xnzgdd/p+Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			A3so0Fdmr/DvQRv2NbLMtty8169oaPOwbElHjSuSOqU=
+			Ywq08pQbjMZrbYA+MUWluVA8lfOjad1KoLHsWtcyxd8=
 			</data>
 		</dict>
 		<key>CDVNotification.bundle/beep.wav</key>
@@ -1713,33 +1713,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PHS5V3ER+9TPeOi11zPPIm/EB88=
+			Crvkmav9eZ9wgZsLBhXoGzP+xsQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			lpxqyfWaIIgWB+t+Fm3EqBUMDBfUv61yyI3yhWgNq7k=
+			g1jhzIMJv5d+9as3pjxR56vCZ3NjGFvSsXb3sh0gicA=
 			</data>
 		</dict>
 		<key>MainViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O0Nne0kkSXr9NygJfXZdR+qRCII=
+			WMHbV2lQRB86aqKUh/Lu6UH4/Kg=
 			</data>
 			<key>hash2</key>
 			<data>
-			OsvOpiwCxB9LnNU8MzGfXoqTGpAEt2iaaUigA9zGFHE=
+			/A52IgJyeQy3VeFTIlOm0m3AbkmxaSoSCHo2SOFAw1E=
 			</data>
 		</dict>
 		<key>config.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1F4tuJAoGPCsKd+hEMC9yryzpO8=
+			/4ztxRRcvkbKmj6CcjYJShDL/oE=
 			</data>
 			<key>hash2</key>
 			<data>
-			uMrjLROOl/Xn4/kmu/rl/qWmna8r6EkYfUjgX/XLkwE=
+			Eowts3bYMh2JRSrOyUGulunUp06uoo75Cfxd0p2rT80=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
@@ -2054,11 +2054,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bM4M8HLZlxnkyrLwiP6AbVJMRQk=
+			HvhyRYms7tE90oBWj+ngpPnmryY=
 			</data>
 			<key>hash2</key>
 			<data>
-			nKtOvBigZteghA5PIglQR4CdFkk5lix47Fj4PT3yEDY=
+			2hCubSdWcpBGo9TQEtt4qGJ3KBwoF67O5nS2Ocven/0=
 			</data>
 		</dict>
 		<key>www/faviconMunford.png</key>
@@ -2175,11 +2175,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pubQtKoQY0m4qClfTqzV3yPnFrk=
+			0xm03TAXVb5j4YQvSTidYBf6Mf4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gvTszsc/DNpCCCix2TEjUuvSM4yYRWaSHGyrTDIyQtE=
+			AVR3f+2brXOFkcEaj0t/OroQ4KewRYoqSZEwDq9iSsY=
 			</data>
 		</dict>
 		<key>www/img/suspect4.png</key>
@@ -2230,11 +2230,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			36jR/BC4GK/Ty60suvImkrHPUUw=
+			pubQtKoQY0m4qClfTqzV3yPnFrk=
 			</data>
 			<key>hash2</key>
 			<data>
-			5ubHDq+DfFFJ6QhsISi+bvacnICA4QFAOzOfh7zoWbg=
+			gvTszsc/DNpCCCix2TEjUuvSM4yYRWaSHGyrTDIyQtE=
 			</data>
 		</dict>
 		<key>www/img/suspect9.png</key>
@@ -2318,11 +2318,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+6A2bF9tWgnDXXLYlaO9rc5/NZU=
+			tmhuznQyyojB9ey1R9mw2sDJzuc=
 			</data>
 			<key>hash2</key>
 			<data>
-			gg8R02UfWnZ+XP97IEX1gfGOF6Hbepetum9QPjVu0sI=
+			PfvxyorqAemOPZhvtG9kOfG0Rc9s/rpfKDQrpSvUXX8=
 			</data>
 		</dict>
 		<key>www/js/jquery-ui.js</key>
@@ -2406,11 +2406,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sargTrb6+DePVvTk2pePc+/aNcU=
+			z0khMNGp4Hvr9OURdpnaTFmCMP4=
 			</data>
 			<key>hash2</key>
 			<data>
-			B5nEKDCFd2uog24kjMymxj7cD3ik2Ys28tOnDVVKXAE=
+			lNLNuOGvXRGfHC9TBmXk776OsF/7EYnkpbdJQsXJ2Ak=
 			</data>
 		</dict>
 		<key>www/p3.html</key>
@@ -2428,11 +2428,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CVpoOGQVdBT8uAGwhjI1d8hCIOo=
+			zeZhicqA9FQkdBSBiuVpV+uApMs=
 			</data>
 			<key>hash2</key>
 			<data>
-			fu0A1hz2Xdl+ZlPALa1VEOz7GPGZxFHM0MN3hmXeTZw=
+			PwuYg9Cf7itXUOhWKkI6B6zF/ZD1B0ygmopESvxhPxQ=
 			</data>
 		</dict>
 		<key>www/p5.html</key>
@@ -2461,11 +2461,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hTQXPpRx9ZC+ED0lIO/yz5SDfOA=
+			zfKNbhXTqSY66jb3aoDb7PVzE6k=
 			</data>
 			<key>hash2</key>
 			<data>
-			jGRTL8drnh2ARALSyFaI+HNEw5xeEjdNn3duipIvQPQ=
+			I6s6M5y/RNHGM/p5fA7r3pgW2oW97RJLI6By+fN0ku8=
 			</data>
 		</dict>
 		<key>www/p8.html</key>
@@ -2483,11 +2483,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KpkbXLRtUTE+KqdyeEt+pwC8Kn0=
+			7fAmjLsnVuzXEbCQ6quTgry3Qcc=
 			</data>
 			<key>hash2</key>
 			<data>
-			r4Spi5i/kmngbtKvqwtqxqmDY1tNFLchOwlIlC4oKYo=
+			tJ4YQkq6OgSla/sc24vP/CdshNpTvC3mgTqJotetVz8=
 			</data>
 		</dict>
 		<key>www/plugins/cordova-plugin-battery-status/www/battery.js</key>
