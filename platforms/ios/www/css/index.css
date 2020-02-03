@@ -154,36 +154,58 @@ body {
 	font-size: 30px;
 }
 
+.title3 {
+	text-align: right;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contacto {
+	margin: 10px 25px 0px 25px;
+	font-size: 20px;
+}
+
+.info {
+	margin: 0px 25px;
+}
+
 .model_char {
-	padding-left: 20vw !important;
-	opacity: 0.75;
+	margin-top: 10px;
+	/*opacity: 0.75;*/
+	font-size: 11px;
+	line-height: 12px;
+	background-image: linear-gradient(left, rgba(171, 144, 129, .5) 0, rgba(171, 144, 129, .5) 100%);
+	background-image: -webkit-linear-gradient(left, rgba(171, 144, 129, .5) 0, rgba(171, 144, 129, .5) 100%);
+	background-image: -moz-linear-gradient(left, rgba(171, 144, 129, .5) 0, rgba(171, 144, 129, .5) 100%);
+	background-image: -ms-linear-gradient(left, rgba(171, 144, 129, .5) 0, rgba(171, 144, 129, .5) 100%);
+	background-image: -o-linear-gradient(left, rgba(171, 144, 129, .5) 0, rgba(171, 144, 129, .5) 100%);
 }
 
 .model_name {
 	margin-top: 10px;
-	padding: 0 0 0 40px !important;
-	font-size: 25px;
+	padding-left: 5vw !important;
+	font-size: 20px;
 	font-family: muliextralight;
 	line-height: 12px;
-	background-image: linear-gradient(left, transparent 60px, rgba(171, 144, 129, .5) 60px, rgba(171, 144, 129, .5) 100%);
-	background-image: -webkit-linear-gradient(left, transparent 60px, rgba(171, 144, 129, .5) 60px, rgba(171, 144, 129, .5) 100%);
-	background-image: -moz-linear-gradient(left, transparent 60px, rgba(171, 144, 129, .5) 60px, rgba(171, 144, 129, .5) 100%);
-	background-image: -ms-linear-gradient(left, transparent 60px, rgba(171, 144, 129, .5) 60px, rgba(171, 144, 129, .5) 100%);
-	background-image: -o-linear-gradient(left, transparent 60px, rgba(171, 144, 129, .5) 60px, rgba(171, 144, 129, .5) 100%);
+	background-image: linear-gradient(left, transparent 30px, rgba(171, 144, 129, .5) 30px, rgba(171, 144, 129, .5) 100%);
+	background-image: -webkit-linear-gradient(left, transparent 30px, rgba(171, 144, 129, .5) 30px, rgba(171, 144, 129, .5) 100%);
+	background-image: -moz-linear-gradient(left, transparent 30px, rgba(171, 144, 129, .5) 30px, rgba(171, 144, 129, .5) 100%);
+	background-image: -ms-linear-gradient(left, transparent 30px, rgba(171, 144, 129, .5) 30px, rgba(171, 144, 129, .5) 100%);
+	background-image: -o-linear-gradient(left, transparent 30px, rgba(171, 144, 129, .5) 30px, rgba(171, 144, 129, .5) 100%);
 }
 
 .model_surname {
-	padding-left: 60px !important;
+	padding-left: 10vw !important;
 	font-family: muliregular;
 	position: relative;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .model_insta {
-	padding-left: 80px !important;
 	font-family: mulilight;
 	position: relative;
-	font-size: 20px;
+	font-size: 15px;
+    line-height: 30px;
 }
 
 #game {
@@ -451,10 +473,15 @@ body {
 	justify-content: center;
 }
 
-.solution,
-.question {
+.solution {
 	font-size: 20px;
 }
+
+.question {
+	font-size: 22px;
+	font-weight: bolder;
+}
+
 
 .strong {
 	font-family: mulibold;
@@ -469,6 +496,19 @@ body {
 	padding: 15px 20px 30px 15px;
 	background-size: 70vw;
 	background-repeat: no-repeat;
+}
+
+#text-credits {
+	background-size: 71vw 20vh;
+}
+#text-novel {
+	background-size: 71vw 17vh;
+}
+#text-trailer {
+	background-size: 71vw 12vh;
+}
+#text-game {
+	background-size: 71vw 14vh;
 }
 
 .text-credit {
@@ -488,12 +528,22 @@ body {
 	height: 100vh;
 }
 
-#text-extra {
-	background-size: 70vw 11vh;
+.about-me {
+	text-align: justify;
+	display: flex;
+	margin-top: 5px !important;
+	margin-bottom: 0px !important;
 }
 
-#text-game {
-	background-size: 70vw 12vh;
+.angel {
+	background-image: url(../img/angel.png);
+	width: 45vw;
+	height: 40vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	object-fit: contain;
+
 }
 
 

@@ -59,11 +59,11 @@ var app = {
 		$('#page10').load('p10.html');
 		var player = document.getElementById("player");
 		setTimeout(function() {
-			app.beginIntro();
-			// $('#page0').hide();
-			// $('#logo').hide();
-			// $('#personajes').hide();
-			// $('#page10').show('fast');
+			// app.beginIntro();
+			$('#page0').hide();
+			$('#logo').hide();
+			$('#personajes').hide();
+			$('#page7').show('fast');
 			// $('#page3').removeClass('opacity0');
 			// $('.suspect:not(.susbig)').removeClass('opacity0');
 		}, 2000);
@@ -101,7 +101,7 @@ var app = {
 	},
 	play: function(mode) {
 		modo = mode;
-		$('#'+mode).addClass('pressed');
+		$('#' + mode).addClass('pressed');
 		$('#page1').fadeOut('slow', function() {
 			$('#page2').fadeIn('slow');
 			$('#logo').fadeOut('slow');
@@ -130,12 +130,12 @@ var app = {
 	},
 
 	playAudio: function(numberAudio) {
-		console.log("Loading " + 'audio/'+ modo + numberAudio + '.mp3');
-		player.src = 'audio/'+ modo + numberAudio + '.mp3';
+		console.log("Loading " + 'audio/' + modo + numberAudio + '.mp3');
+		player.src = 'audio/' + modo + numberAudio + '.mp3';
 		player.load();
 		player.play();
 		player.onended = function() {};
-		if (numberAudio == 6 && modo == 'game') {
+		if (numberAudio == 9 && modo == 'game') {
 			app.startPuzzle(3);
 			$('#page2').fadeOut('slow', function() {
 				$('#page10').removeClass('opacity0');
@@ -144,10 +144,17 @@ var app = {
 	},
 
 	resolution: function() {
-		$('#page2').fadeOut('slow', function() {
-			$('#page3').removeClass('opacity0');
-			$('.suspect:not(.susbig)').removeClass('opacity0');
-		});
+		if (modo == "game") {
+			$('#page2').fadeOut('slow', function() {
+				$('#page3').removeClass('opacity0');
+				$('.suspect:not(.susbig)').removeClass('opacity0');
+			});
+		} else {
+			$('#page2').fadeOut('slow', function() {
+				$('#page7').fadeIn('slow');
+			});
+		}
+
 	},
 
 	check_suspect: function(suspect) {
