@@ -78,7 +78,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		prhT3ajJ2LvV9tDfnvJd53TOmaY=
+		REjTIAkShTGB8bPZhZe2PwRLQ5s=
 		</data>
 		<key>CDVCapture.bundle/controls_bg.png</key>
 		<data>
@@ -202,11 +202,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib</key>
 		<data>
-		od3+YnJDw7kqAdoHQkFWiGoTZsY=
+		ig9057m+QmURlzDqSQyr7+y0Ucs=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
 		<data>
-		o+HK65HLgTQnc5K/5YpkSxJguKw=
+		Wl1qBctlW9B5H1rKUqkHTbVufvk=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -214,11 +214,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib</key>
 		<data>
-		c4RbnskgqtMp0qyNqMRBNXVz8bM=
+		w8Zcm7dr0KAjCvbNmYmtKR1BKhs=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<data>
-		C0zbUZ9v7VkxRz4o/Xnzgdd/p+Q=
+		CxBIZdUXoW0k/6qhMilwYF+MvUM=
 		</data>
 		<key>CDVNotification.bundle/beep.wav</key>
 		<data>
@@ -226,7 +226,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		y/5vVrh3AMWZIehegExObELRGa8=
+		anwIBQZF1qyixg7M6SO4sO4mLv4=
 		</data>
 		<key>LaunchImage-1100-Landscape-2436h@3x.png</key>
 		<data>
@@ -278,11 +278,11 @@
 		</data>
 		<key>MainViewController.nib/objects-13.0+.nib</key>
 		<data>
-		Crvkmav9eZ9wgZsLBhXoGzP+xsQ=
+		6As9A/qtEwsR/aYW5UbTPkN4CHY=
 		</data>
 		<key>MainViewController.nib/runtime.nib</key>
 		<data>
-		WMHbV2lQRB86aqKUh/Lu6UH4/Kg=
+		xRdF7fwu5mxpEPASCRt778tcqZ4=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -290,7 +290,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		/4ztxRRcvkbKmj6CcjYJShDL/oE=
+		rl5JrLfk+f5v65ZHWbO0gYQUQIE=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -406,7 +406,7 @@
 		</data>
 		<key>www/css/index.css</key>
 		<data>
-		HvhyRYms7tE90oBWj+ngpPnmryY=
+		v7nbwguev731fya6kMRXl6eyd2Q=
 		</data>
 		<key>www/faviconMunford.png</key>
 		<data>
@@ -502,7 +502,7 @@
 		</data>
 		<key>www/js/index.js</key>
 		<data>
-		tmhuznQyyojB9ey1R9mw2sDJzuc=
+		CM7ca3+I8MVE4XofaosBIOD4SKA=
 		</data>
 		<key>www/js/jquery-ui.js</key>
 		<data>
@@ -554,15 +554,15 @@
 		</data>
 		<key>www/p7.html</key>
 		<data>
-		zfKNbhXTqSY66jb3aoDb7PVzE6k=
+		E7kRaMv6I8swxCHg94DIzdvFXiI=
 		</data>
 		<key>www/p8.html</key>
 		<data>
-		YPd3lMGVt24iKprhy6NxmzZuzsU=
+		1VTUxcgpgeJ3rS+kH47Ao19KY/U=
 		</data>
 		<key>www/p9.html</key>
 		<data>
-		7fAmjLsnVuzXEbCQ6quTgry3Qcc=
+		Bn83BfeegaP4WLvNSWqZh171TcU=
 		</data>
 		<key>www/plugins/cordova-plugin-battery-status/www/battery.js</key>
 		<data>
@@ -1221,11 +1221,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			prhT3ajJ2LvV9tDfnvJd53TOmaY=
+			REjTIAkShTGB8bPZhZe2PwRLQ5s=
 			</data>
 			<key>hash2</key>
 			<data>
-			JAhmf0dXtFhDNjgDSwhbb7mfOLvKY30GpsjBf/ULzrY=
+			1ZuzZkN2psCK0LYpk/+docU3+2HPPtoRgYYmS1WIUbA=
 			</data>
 		</dict>
 		<key>CDVCapture.bundle/controls_bg.png</key>
@@ -1515,22 +1515,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			od3+YnJDw7kqAdoHQkFWiGoTZsY=
+			ig9057m+QmURlzDqSQyr7+y0Ucs=
 			</data>
 			<key>hash2</key>
 			<data>
-			R71W9qcce6blGX/lo02FvRhHYg9phBMvQg2e6v0tOzM=
+			4YazqKIbcSDsiBMUDNlFE/jtvcy45S/6LpLOvPYX2cI=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			o+HK65HLgTQnc5K/5YpkSxJguKw=
+			Wl1qBctlW9B5H1rKUqkHTbVufvk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Or+i9/B3vsZBiT3PfQdItwVcfv/c5Hr+RIY8kqwejrU=
+			On5cvcLTzDh6DIxvnIpy0/YY1w3TNRUs/sVAa2spa/M=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -1548,22 +1548,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c4RbnskgqtMp0qyNqMRBNXVz8bM=
+			w8Zcm7dr0KAjCvbNmYmtKR1BKhs=
 			</data>
 			<key>hash2</key>
 			<data>
-			W5q7KCK7PnptASkRKuePdwqUE2wHdP5NZXt3cn9yWNY=
+			EJIgtTujDExqpgTKck1dH8L5DvhkXrWCXSUnEM4TnTM=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C0zbUZ9v7VkxRz4o/Xnzgdd/p+Q=
+			CxBIZdUXoW0k/6qhMilwYF+MvUM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ywq08pQbjMZrbYA+MUWluVA8lfOjad1KoLHsWtcyxd8=
+			lB+I17V7buJOUWaBaPK4e0Gw2fc8qyFj+p/wtlEnePo=
 			</data>
 		</dict>
 		<key>CDVNotification.bundle/beep.wav</key>
@@ -1713,33 +1713,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Crvkmav9eZ9wgZsLBhXoGzP+xsQ=
+			6As9A/qtEwsR/aYW5UbTPkN4CHY=
 			</data>
 			<key>hash2</key>
 			<data>
-			g1jhzIMJv5d+9as3pjxR56vCZ3NjGFvSsXb3sh0gicA=
+			hYA7voPGd6wTYafwwoG0os6dBA7e8537PMzhNXqR1w4=
 			</data>
 		</dict>
 		<key>MainViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WMHbV2lQRB86aqKUh/Lu6UH4/Kg=
+			xRdF7fwu5mxpEPASCRt778tcqZ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			/A52IgJyeQy3VeFTIlOm0m3AbkmxaSoSCHo2SOFAw1E=
+			M1L94h/dxDwUbGok8vwLGpltNZRAX7yX7SNoBRYOTJY=
 			</data>
 		</dict>
 		<key>config.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/4ztxRRcvkbKmj6CcjYJShDL/oE=
+			rl5JrLfk+f5v65ZHWbO0gYQUQIE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Eowts3bYMh2JRSrOyUGulunUp06uoo75Cfxd0p2rT80=
+			5zmkQWqQh/gjE0PvYllCQuCVRWqJ14nHGE4cDpeR148=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
@@ -2054,11 +2054,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HvhyRYms7tE90oBWj+ngpPnmryY=
+			v7nbwguev731fya6kMRXl6eyd2Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			2hCubSdWcpBGo9TQEtt4qGJ3KBwoF67O5nS2Ocven/0=
+			9T7knH8P42YkVHxkfKbFnYVjbK3rIrxovESf4PjTaeM=
 			</data>
 		</dict>
 		<key>www/faviconMunford.png</key>
@@ -2318,11 +2318,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tmhuznQyyojB9ey1R9mw2sDJzuc=
+			CM7ca3+I8MVE4XofaosBIOD4SKA=
 			</data>
 			<key>hash2</key>
 			<data>
-			PfvxyorqAemOPZhvtG9kOfG0Rc9s/rpfKDQrpSvUXX8=
+			7Ha1dGXDbYzudY5ph+A4R0R+pmu9ILSDzqdYAMgJ6CM=
 			</data>
 		</dict>
 		<key>www/js/jquery-ui.js</key>
@@ -2461,33 +2461,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zfKNbhXTqSY66jb3aoDb7PVzE6k=
+			E7kRaMv6I8swxCHg94DIzdvFXiI=
 			</data>
 			<key>hash2</key>
 			<data>
-			I6s6M5y/RNHGM/p5fA7r3pgW2oW97RJLI6By+fN0ku8=
+			hF2RsA07OkkjY9TzpBdqj0hZeaevdcIwWb1owyRoFOs=
 			</data>
 		</dict>
 		<key>www/p8.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YPd3lMGVt24iKprhy6NxmzZuzsU=
+			1VTUxcgpgeJ3rS+kH47Ao19KY/U=
 			</data>
 			<key>hash2</key>
 			<data>
-			lsgIZAKFnitjPTEJBYRwevMk/3X+pT1ydevUwP23MWg=
+			jvORyusds/RQistM8es9Mp6rec1LFb8/VYnzrtCeynM=
 			</data>
 		</dict>
 		<key>www/p9.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7fAmjLsnVuzXEbCQ6quTgry3Qcc=
+			Bn83BfeegaP4WLvNSWqZh171TcU=
 			</data>
 			<key>hash2</key>
 			<data>
-			tJ4YQkq6OgSla/sc24vP/CdshNpTvC3mgTqJotetVz8=
+			31R0O1a7ZZEu16SjnOPukB3XX4b1jTMDqb4WdySnmq8=
 			</data>
 		</dict>
 		<key>www/plugins/cordova-plugin-battery-status/www/battery.js</key>

@@ -63,7 +63,7 @@ var app = {
 			// $('#page0').hide();
 			// $('#logo').hide();
 			// $('#personajes').hide();
-			// $('#page7').show('fast');
+			// $('#page8').show('fast');
 			// $('#page3').removeClass('opacity0');
 			// $('.suspect:not(.susbig)').removeClass('opacity0');
 		}, 2000);
