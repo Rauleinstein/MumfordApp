@@ -58,6 +58,7 @@ var app = {
 		$('#page9').load('p9.html');
 		$('#page10').load('p10.html');
 		var player1 = document.getElementById("player1");
+		check_times = 0;
 		setTimeout(function() {
 			app.beginIntro();
 			// $('#page0').hide();
@@ -104,6 +105,8 @@ var app = {
 		$('#' + mode).addClass('pressed');
 		if (modo == 'listen') {
 			$('#text-intro').html('Esta exposición plantea un enigma. Has decidido seguir los pasos del detective Johnson para que él te desvele todos los secretos. Acompaña al detective a través de la exposición y descubre a través de sus testimonios cómo descubrió al culpable.');
+		} else {
+			$('#text-intro').html('Esta exposición plantea un enigma, un reto, convirtiendote en detective y las imágenes en las piezas del puzzle que debes resolver. Observa los detalles, sigue las pistas y testimonios, y ayuda al detective Johnson a resolver el crimen.');
 		}
 		$('#page1').fadeOut('slow', function() {
 			$('#page2').fadeIn('slow');
@@ -117,6 +120,19 @@ var app = {
 				var notClicked = $('.button').not(this);
 				notClicked.removeClass('pressed');
 			});
+		});
+	},
+
+	backToSelect: function () {
+		modo = '';
+		$('#page2').fadeOut('slow', function() {
+			$('#page1').fadeIn('slow');
+			$('#logo').fadeIn('slow');
+			$('#personajes').fadeIn('slow');
+			$('#b0').show();
+			$('#page2 > .botonera').css("display", "none").show().fadeOut('slow');
+			$('#bIntro').show('fast');
+			$('#player1').fadeOut('fast');
 		});
 	},
 
@@ -154,6 +170,7 @@ var app = {
 			});
 		} else {
 			$('#page2').fadeOut('slow', function() {
+				$('.result-'+modo).removeClass('hidden');
 				$('#page7').fadeIn('slow');
 			});
 		}
@@ -161,6 +178,8 @@ var app = {
 	},
 
 	check_suspect: function(suspect) {
+		check_times++;
+		localStorage.setItem("check_times", check_times);
 		$('.susbig').attr('id', 'suspect' + suspect);
 		setTimeout(function() {
 			$('.susbig').removeClass('opacity0');
@@ -204,11 +223,84 @@ var app = {
 	},
 
 	motive: function(motive) {
+		localStorage.setItem('motive', motive);
+		app.score();
+		$('.result-'+modo).removeClass('hidden');
 		$('#motive' + motive).addClass('pressed');
 		$('#page6').fadeOut('slow', function() {
 			$('#page7').fadeIn('slow');
 		});
-		localStorage.setItem('motive', motive);
+	},
+
+	score: function() {
+		check_times = localStorage.getItem('check_times');
+		motivo = localStorage.getItem('motive');
+		ayudante = localStorage.getItem('helper');
+		llave = localStorage.getItem('key');
+		correct = '&#10004;';
+		wrong = '&#10008;';
+		starFull = '&#10029;';
+		starEmpty = '&#10025;';
+		puntuacion = 1;
+		if (check_times > 1) {
+			$('#asesino').html('Noah Willcox &#10004; ('+check_times+' intentos)');
+		} else {
+			puntuacion += 1;
+		}
+		switch(ayudante) {
+			case "1":
+				$('#ayudante').html('Crystal Munford '+correct);
+				puntuacion += 1;
+				break;
+			case "2":
+				$('#ayudante').html('Sebastian Munford '+wrong);
+				break;
+			case "3":
+				$('#ayudante').html('Allan Munford '+wrong);
+				break;
+			case "4":
+				$('#ayudante').html('Samuel Oakes '+wrong);
+				break;
+		}
+		switch(llave) {
+			case "1":
+				$('#llave').html('Habitación 227 '+wrong);
+				break;
+			case "2":
+				$('#llave').html('Habitación 312 '+correct);
+				puntuacion += 1;
+				break;
+			case "3":
+				$('#llave').html('Habitación 317 '+wrong);
+				break;
+			case "4":
+				$('#llave').html('Habitación 315 '+wrong);
+				break;
+		}
+		switch(motivo) {
+			case "1":
+				$('#motivo').html('Celos '+wrong);
+				break;
+			case "2":
+				$('#motivo').html('Económico '+correct);
+				puntuacion += 1;
+				break;
+			case "3":
+				$('#motivo').html('Envidia '+wrong);
+				break;
+			case "4":
+				$('#motivo').html('Ajuste de cuentas '+wrong);
+				break;
+		}
+		text_punt = "";
+		for (var i = 1; i <= 5; i++) {
+			if (i <= puntuacion) {
+				text_punt += starFull;
+			} else {
+				text_punt += starEmpty;
+			}
+		}
+		$('#puntuacion').html(text_punt);
 	},
 
 	thanks: function() {
@@ -230,6 +322,7 @@ var app = {
 	},
 
 	backToAudio: function() {
+		$('#page3').addClass('opacity0');
 		$('#page10').addClass('opacity0');
 		$('#page2').fadeIn('slow');
 	},
