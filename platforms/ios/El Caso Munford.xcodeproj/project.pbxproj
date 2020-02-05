@@ -306,6 +306,7 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				62552B7823EAF95400F319C3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -402,6 +403,23 @@
 			shellScript = "\"$SRCROOT/El Caso Munford/Scripts/copy-www-build-step.sh\"";
 			showEnvVarsInLog = 0;
 		};
+		62552B7823EAF95400F319C3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nagvtool next-version -all\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -452,7 +470,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 0.0.8;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = ZB7EM4A78T;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -463,10 +481,11 @@
 				INFOPLIST_FILE = "El Caso Munford/El Caso Munford-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				MARKETING_VERSION = 0.0.7;
+				MARKETING_VERSION = 0.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.raulalvarez.munfordapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -482,7 +501,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 0.0.8;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = ZB7EM4A78T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "El Caso Munford/El Caso Munford-Prefix.pch";
@@ -491,11 +510,12 @@
 				INFOPLIST_FILE = "El Caso Munford/El Caso Munford-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				MARKETING_VERSION = 0.0.7;
+				MARKETING_VERSION = 0.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.raulalvarez.munfordapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

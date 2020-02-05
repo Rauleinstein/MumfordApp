@@ -105,6 +105,8 @@ var app = {
 		$('#' + mode).addClass('pressed');
 		if (modo == 'listen') {
 			$('#text-intro').html('Esta exposición plantea un enigma. Has decidido seguir los pasos del detective Johnson para que él te desvele todos los secretos. Acompaña al detective a través de la exposición y descubre a través de sus testimonios cómo descubrió al culpable.');
+		} else {
+			$('#text-intro').html('Esta exposición plantea un enigma, un reto, convirtiendote en detective y las imágenes en las piezas del puzzle que debes resolver. Observa los detalles, sigue las pistas y testimonios, y ayuda al detective Johnson a resolver el crimen.');
 		}
 		$('#page1').fadeOut('slow', function() {
 			$('#page2').fadeIn('slow');

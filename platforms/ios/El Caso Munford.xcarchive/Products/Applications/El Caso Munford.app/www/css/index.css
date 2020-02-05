@@ -308,7 +308,7 @@ body {
 	font-size: 16px;
 	position: relative;
 	width: 80%;
-	margin: 20px auto;
+	margin: 10px auto;
 	text-align: center;
 	font-family: mulilight;
 }
@@ -342,6 +342,7 @@ body {
 	right: 0;
 	bottom: 0;
 	margin: auto;
+	z-index: 2;
 }
 
 .helper.medium {
@@ -485,7 +486,9 @@ body {
 	padding-left: 70px;
 }
 
-
+#bNext {
+	z-index: 1;
+}
 
 .strong {
 	font-family: mulibold;
