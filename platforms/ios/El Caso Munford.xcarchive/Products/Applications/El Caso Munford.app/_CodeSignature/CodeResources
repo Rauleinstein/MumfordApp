@@ -78,7 +78,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		7i0QgnkmklU9MryktoXKzY6CBaQ=
+		QTA0spGhqamLagcAKqAkfDecuS8=
 		</data>
 		<key>CDVCapture.bundle/controls_bg.png</key>
 		<data>
@@ -202,11 +202,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib</key>
 		<data>
-		UnEbM2zzlqQMy6txOTqpnnuehm0=
+		E33O4UbFWnPkRHN0f9lw9Wd7K6w=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
 		<data>
-		kaOZ/23ncWuQSuO0OYGqPSNrhdU=
+		WhuTNEF531QbyFA6rb7dU/ULc7I=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -214,11 +214,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib</key>
 		<data>
-		kCdG7MTEdexULsJKlcJ0rQSSOn0=
+		6uTaDMNbxsn/eyyu9JBS93cEhw0=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<data>
-		wdHV7hr0dD9wD51V1T8XMrOZvFw=
+		HiFQpAjEY6IMoUB7k+QfoIcs8Jk=
 		</data>
 		<key>CDVNotification.bundle/beep.wav</key>
 		<data>
@@ -226,7 +226,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wwThvBk7RUUt9QMsA4APnQDp658=
+		LI80p5XNR2iuzX5cOEedN7xuixQ=
 		</data>
 		<key>LaunchImage-1100-Landscape-2436h@3x.png</key>
 		<data>
@@ -278,11 +278,11 @@
 		</data>
 		<key>MainViewController.nib/objects-13.0+.nib</key>
 		<data>
-		AsPbPcKx+St1fOmJdK9X/PbSaUk=
+		PrM8xh04ViY2I3vJgT3GUPK1Cvo=
 		</data>
 		<key>MainViewController.nib/runtime.nib</key>
 		<data>
-		3cdKSqqSrQI1JqtHSPRdVTyHopw=
+		5ee4U0kO9lyHpF4Fv2Kndj6HZXo=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -290,7 +290,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		capd1EJPpiKM7YHWTNYYsAVBh8w=
+		0IeANEw9j8VTmFWXonfRFnFt6b0=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -482,7 +482,7 @@
 		</data>
 		<key>www/css/index.css</key>
 		<data>
-		xO3ci3QEWe9LbwVk6MBqqKH4nnM=
+		whrVjw0r+hQNZGPuO/9j+F48rvk=
 		</data>
 		<key>www/faviconMunford.png</key>
 		<data>
@@ -650,7 +650,7 @@
 		</data>
 		<key>www/p8.html</key>
 		<data>
-		RCIHilYENydOLpYwg20BUY3KMhE=
+		tfhWFzBPw8iYQavipmnPxCnbWxk=
 		</data>
 		<key>www/p9.html</key>
 		<data>
@@ -1313,11 +1313,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7i0QgnkmklU9MryktoXKzY6CBaQ=
+			QTA0spGhqamLagcAKqAkfDecuS8=
 			</data>
 			<key>hash2</key>
 			<data>
-			JtjId5fS/bsZ0vzPyY9fB0w7aMI3jPARwh5LUqGljoM=
+			i8B4Lv0NqjedLEjUWfsUXEYk0+IW1U+lo3gN9bUdmGw=
 			</data>
 		</dict>
 		<key>CDVCapture.bundle/controls_bg.png</key>
@@ -1607,22 +1607,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UnEbM2zzlqQMy6txOTqpnnuehm0=
+			E33O4UbFWnPkRHN0f9lw9Wd7K6w=
 			</data>
 			<key>hash2</key>
 			<data>
-			E6o6c9diGmw+oOd0Av8FExZcg1z4wRIoNZvxgcILHDc=
+			/zom/xMKUSZqJuBqTHq5HRTAFoo5M6pqFmJVm9UwYn8=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kaOZ/23ncWuQSuO0OYGqPSNrhdU=
+			WhuTNEF531QbyFA6rb7dU/ULc7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			1czShneFUujrn0+A7rvIzzT2BzKn2cJxVjwF1bmGAQc=
+			zige2135ThDh0l4kdzwVVnE21MEi9nimEvNB86/eVWg=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -1640,22 +1640,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kCdG7MTEdexULsJKlcJ0rQSSOn0=
+			6uTaDMNbxsn/eyyu9JBS93cEhw0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LInCUbZ6IwSJ/wFZ3azfqwLHhXRekJV5BSqgI30Ze/g=
+			DL9R5bkpPs2TlgbVwG92gMqxBJq2M3YLup9VmRQGN5E=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wdHV7hr0dD9wD51V1T8XMrOZvFw=
+			HiFQpAjEY6IMoUB7k+QfoIcs8Jk=
 			</data>
 			<key>hash2</key>
 			<data>
-			0lTcbR4QBOVjSpK6LVYlcv0/AC0er7Qkoqdlgz0nhDI=
+			EWyx2J90M/fdSPiMQb1zJzh7CjzjWRU3KMtL7MQkqzk=
 			</data>
 		</dict>
 		<key>CDVNotification.bundle/beep.wav</key>
@@ -1805,33 +1805,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AsPbPcKx+St1fOmJdK9X/PbSaUk=
+			PrM8xh04ViY2I3vJgT3GUPK1Cvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			hqVYoLyPw8JDlmlBH5YEc0Z6Irg0V/6nkvTM6hgrhYc=
+			4cyt7YKgibN3bUMf8+eCqEAw7DnQr4/XlvSz5XWGqZU=
 			</data>
 		</dict>
 		<key>MainViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3cdKSqqSrQI1JqtHSPRdVTyHopw=
+			5ee4U0kO9lyHpF4Fv2Kndj6HZXo=
 			</data>
 			<key>hash2</key>
 			<data>
-			muuEzCv7FuIb8v7X9R5YEj1NXgkE+EPuM3hyfQ4M6qI=
+			wxSYboFVBRIh4ZAMI8IMNMv3FzSfn0WxbdF8q4jT0xw=
 			</data>
 		</dict>
 		<key>config.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			capd1EJPpiKM7YHWTNYYsAVBh8w=
+			0IeANEw9j8VTmFWXonfRFnFt6b0=
 			</data>
 			<key>hash2</key>
 			<data>
-			4GBENlP5MgGRL+RF98lgJOFSBeejrLLC0DPpo8E4RxA=
+			G6EwehrOg3CfVPf2QPLo1cokMe55fsJbwE17IHgeS3w=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
@@ -2355,11 +2355,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xO3ci3QEWe9LbwVk6MBqqKH4nnM=
+			whrVjw0r+hQNZGPuO/9j+F48rvk=
 			</data>
 			<key>hash2</key>
 			<data>
-			O2BwWtE6O08SNRqTly8EVwNRCcxbr9oVgIqdg12d1sI=
+			ktyQgp60Is5yjyEM0edGj66jcSucWDag0ErokTRNvWY=
 			</data>
 		</dict>
 		<key>www/faviconMunford.png</key>
@@ -2817,11 +2817,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RCIHilYENydOLpYwg20BUY3KMhE=
+			tfhWFzBPw8iYQavipmnPxCnbWxk=
 			</data>
 			<key>hash2</key>
 			<data>
-			fhCG1p8ak4pSseYrqBXcMnkeEZqrExjwPWsephfwx64=
+			0D8773GnHbnV1OFbgOsL7uS+tUgttyWH2+v2OvCep3o=
 			</data>
 		</dict>
 		<key>www/p9.html</key>
