@@ -98,6 +98,7 @@ var app = {
 		$('#start').addClass('pressed');
 		$('#page0').fadeOut('slow', function() {
 			$('#page1').fadeIn('slow');
+			app.startPuzzle(3);
 		});
 	},
 	play: function(mode) {
@@ -153,13 +154,13 @@ var app = {
 		player1.src = 'audio/' + modo + numberAudio + '.mp3';
 		player1.load();
 		player1.play();
-		player1.onended = function() {};
-		if (numberAudio == 9 && modo == 'game') {
-			app.startPuzzle(3);
-			$('#page2').fadeOut('slow', function() {
-				$('#page10').removeClass('opacity0');
-			});
-		}
+		player1.onended = function() {
+			if (numberAudio == 9 && modo == 'game') {
+				$('#page2').fadeOut('slow', function() {
+					$('#page10').removeClass('opacity0');
+				});
+			}
+		};
 	},
 
 	resolution: function() {
@@ -324,10 +325,13 @@ var app = {
 	backToAudio: function() {
 		$('#page3').addClass('opacity0');
 		$('#page10').addClass('opacity0');
+		$('#page7').fadeOut('slow');
+		$('.result-'+modo).addClass('hidden');
 		$('#page2').fadeIn('slow');
 	},
 
 	startPuzzle: function(x) {
+
 		console.log("puzzle started");
 		$('#pile').height($('#source_image').height());
 		$('#puzzle_solved').hide();

@@ -269,7 +269,7 @@ body {
 	line-height: 50px;
 	font-size: 25px;
 	position: relative;
-	margin: 10px 5px;
+	margin: 10px auto;
 	display: inline-block;
 }
 
@@ -552,6 +552,28 @@ body {
 	margin-left: 5px;
 }
 
+.banner {
+	height: 9vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 20px 15px -30px 15px;
+}
+
+#freakmondo {
+	background-image: url(../img/BannerFreakmondo.jpg);
+}
+
+#hotel {
+	background-image: url(../img/BannerHotel.jpg);
+}
+
+#angelguzman {
+	background-image: url(../img/BannerAngelGuzman.jpg);
+}
+
+#guerrademitos {
+	background-image: url(../img/BannerGDM.jpg);
+}
 
 @media (max-height: 650px) {
 	.button.small {
