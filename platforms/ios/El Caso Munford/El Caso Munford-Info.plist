@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>11</string>
+	<string>12</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -30,19 +30,19 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>Using camara</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Using location for audio</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Using</string>
 	<key>NSMainNibFile~ipad</key>
 	<string></string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string></string>
+	<string>Using</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Using photo library for storing photos</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string></string>
+	<string>Using</string>
 	<key>UIInterfaceOrientation</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
