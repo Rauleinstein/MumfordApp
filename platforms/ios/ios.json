@@ -63,30 +63,42 @@
         "parents": {
           "NSCameraUsageDescription": [
             {
-              "xml": "<string> </string>",
-              "count": 2
+              "xml": "<string>Need camera access to take pictures</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
             }
           ],
           "NSPhotoLibraryUsageDescription": [
             {
-              "xml": "<string> </string>",
-              "count": 2
+              "xml": "<string>need photo library access to get pictures from there</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
             }
           ],
           "NSLocationWhenInUseUsageDescription": [
             {
-              "xml": "<string />",
-              "count": 1
-            },
-            {
-              "xml": "<string> </string>",
-              "count": 1
+              "xml": "<string>need location access to find things nearby</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
             }
           ],
           "NSMicrophoneUsageDescription": [
             {
-              "xml": "<string> </string>",
-              "count": 1
+              "xml": "<string>need microphone to play audio</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
+            }
+          ],
+          "NSPhotoLibraryAddUsageDescription": [
+            {
+              "xml": "<string>need photo library access to save pictures there</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
             }
           ]
         }

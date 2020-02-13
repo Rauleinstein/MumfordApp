@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>16</string>
+	<string>22</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -29,20 +29,16 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string/>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Using location for audio</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
 	<key>NSMainNibFile~ipad</key>
 	<string/>
 	<key>NSMicrophoneUsageDescription</key>
-	<string/>
+	<string>need microphone to play audio</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Using photo library for storing photos</string>
+	<string>need photo library access to save pictures there</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string/>
+	<string>need photo library access to get pictures from there</string>
 	<key>UIInterfaceOrientation</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -59,5 +55,9 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>need location access to find things nearby</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Need camera access to take pictures</string>
 </dict>
 </plist>
