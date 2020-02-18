@@ -2,16 +2,31 @@
 	<div  class="title">Resolución del<br></div>
 	<div  class="title2">CASO</div>
 </div>
-<div class="row">
-	<div id="" class="col-12 question center">¿Quién es el asesino?</div>
-	<div id="" class="col-12 solution center">Noah Willcox</div>
-	<div id="" class="col-12 question center">¿Quién planea el crimen?</div>
-	<div id="" class="col-12 solution center">Crystal Munford</div>
-	<div id="" class="col-12 question center">¿En qué habitación se encontraba<br> el arma del crimen?</div>
-	<div id="" class="col-12 solution center">Nova Willcox</div>
-	<div id="" class="col-12 question center">¿Cuál es el móvil del asesinato?</div>
-	<div id="" class="col-12 solution center">Económico</div>
+<div class="row result-listen hidden">
+	<div id="" class="description">Ahora ya conoces a los sospechosos y todo lo que nuestro detective ha podido averiguar de los hechos. Si ya has disfrutado de toda la exposición, puedes escuchar la conclusión final del detective Jonhson.</div>
 </div>
-<div id="bNext7" class="row botonera justify-content-end">
-	<div onclick="app.thanks()" class="col-6 huge button ">Siguiente</div>
+<div class="row result-game hidden">
+	<div id="" class="col-12 question">¿Quién es el asesino?</div>
+	<div id="asesino" class="col-12 solution">Noah Willcox &#10004;</div>
+	<div id="" class="col-12 question">¿Quién planea el crimen?</div>
+	<div id="ayudante" class="col-12 solution">Crystal Munford &#10008;</div>
+	<div id="" class="col-12 question">¿Dónde se encontraba el arma del crimen?</div>
+	<div id="llave" class="col-12 solution">Habitación 312 &#10004;</div>
+	<div id="" class="col-12 question">¿Cuál es el móvil del asesinato?</div>
+	<div id="motivo" class="col-12 solution">Económico &#10004;</div>
+	<div id="" class="col-12 question center" style="font-size: 30px; padding: 0;">Puntuación</div>
+	<div id="puntuacion" class="col-12 question center" style="font-size: 35px;"> &#10029;&#10029;&#10025;&#10025;&#10025;</div>
+</div>
+<div  class="row botonera">
+	<div id="detective-resolution" onclick="app.playDetectiveResolution()" class="col huge button">Conclusión</div>
+</div>
+<div class="row" style="margin-top: 10px;">
+	<audio id="player2" class="col-11 m-auto hidden" controls="controls" preload="none">
+		<source src="audio/audio13.mp3" type="audio/mpeg" />
+		Your browser does not support the audio element.
+	</audio>
+</div>
+<div id="bNext7" class="row botonera justify-content-between">
+	<div onclick="app.backToAudio()" class="col-4 huge button result-listen hidden">Volver</div>
+	<div id="credits-button" onclick="app.thanks()" class="col-7 huge button hidden">Finalizar</div>
 </div>

@@ -269,8 +269,11 @@ body {
 	line-height: 50px;
 	font-size: 25px;
 	position: relative;
-	margin: 10px auto;
 	display: inline-block;
+}
+
+.space-buttons{
+	margin: 0px 5px;
 }
 
 .botonera {
@@ -296,6 +299,10 @@ body {
 	position: relative;
 	width: 90%;
 	left: 5%;
+}
+
+#player2 {
+	margin-top:
 }
 
 .pressed {
@@ -503,12 +510,13 @@ body {
 	margin-left: 20vw;
 	width: 70vw;
 	text-align: justify;
-	background-image: url(../img/background-text.png);
-	padding: 15px 20px 30px 15px;
-	background-size: 70vw;
+	background: linear-gradient(#d5bca2, #d5bca2);
+	background-position: 15px 19px;
+	outline: #8d648c 1px solid;
+	outline-offset: -10px;
+	padding: 20px 20px 30px 20px;
 	background-repeat: no-repeat;
 }
-
 #text-credits {
 	background-size: 71vw 15vh;
 }
@@ -525,7 +533,7 @@ body {
 #puntuacion {
     font-size: 35px;
     line-height: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 0;
 }
 
@@ -565,7 +573,7 @@ body {
 }
 
 .banner {
-	height: 10vh;
+    padding-top: 14.25%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -629,7 +637,7 @@ body {
 	}
 
 	.botonera {
-		margin:  0px 15px 10px 15px
+		margin:  10px 15px 0px 15px;
 	}
 
 	.description {

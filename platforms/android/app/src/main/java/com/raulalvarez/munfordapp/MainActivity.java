@@ -21,6 +21,8 @@ package com.raulalvarez.munfordapp;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
+
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 
@@ -43,5 +45,6 @@ public class MainActivity extends CordovaActivity
 
         wv_1.getSettings().setBuiltInZoomControls(true);
         wv_1.getSettings().setSupportZoom(true);
+        wv_1.getSettings().setDisplayZoomControls(false);
     }
 }

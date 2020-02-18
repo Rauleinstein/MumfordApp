@@ -58,6 +58,7 @@ var app = {
 		$('#page9').load('p9.html');
 		$('#page10').load('p10.html');
 		var player1 = document.getElementById("player1");
+		var player2 = document.getElementById("player2");
 		check_times = 0;
 		setTimeout(function() {
 			app.beginIntro();
@@ -125,6 +126,8 @@ var app = {
 	},
 
 	backToSelect: function () {
+		player1.pause();
+		player2.pause();
 		modo = '';
 		$('#page2').fadeOut('slow', function() {
 			$('#page1').fadeIn('slow');
@@ -142,6 +145,7 @@ var app = {
 		console.log(modo);
 		player1.src = 'audio/' + modo + '0.mp3';
 		player1.load();
+		player2.pause();
 		player1.play();
 		player1.onended = function() {
 			$('#page2 > .botonera').css("display", "flex").hide().fadeIn('slow');
@@ -153,6 +157,7 @@ var app = {
 		console.log("Loading " + 'audio/' + modo + numberAudio + '.mp3');
 		player1.src = 'audio/' + modo + numberAudio + '.mp3';
 		player1.load();
+		player2.pause();
 		player1.play();
 		player1.onended = function() {
 			if (numberAudio == 9 && modo == 'game') {
@@ -164,6 +169,8 @@ var app = {
 	},
 
 	resolution: function() {
+		player1.pause();
+		player2.pause();
 		if (modo == "game") {
 			$('#page2').fadeOut('slow', function() {
 				$('#page3').removeClass('opacity0');
@@ -305,6 +312,8 @@ var app = {
 	},
 
 	thanks: function() {
+		player1.pause();
+		player2.pause();
 		$('#page7').fadeOut('slow', function() {
 			$('#page8').fadeIn('slow');
 		});
@@ -328,6 +337,8 @@ var app = {
 		$('#page7').fadeOut('slow');
 		$('.result-'+modo).addClass('hidden');
 		$('#page2').fadeIn('slow');
+		player1.pause();
+		player2.pause();
 	},
 
 	startPuzzle: function(x) {
@@ -349,6 +360,20 @@ var app = {
 			$('#pile').height($('#source_image').height());
 			$('#source_image').snapPuzzle('refresh');
 		});
+	},
+
+	playDetectiveResolution: function () {
+		if (modo == 'game') {
+			$("#bNext7").removeClass('justify-content-between');
+			$("#bNext7").addClass('justify-content-end');
+		}
+		$('#player2').fadeIn('fast');
+		// $('#detective-resolution').fadeOut('fast');
+		$('#credits-button').removeClass('hidden');
+		player2.load();
+		player1.pause();
+		player2.play();
+
 	}
 
 };

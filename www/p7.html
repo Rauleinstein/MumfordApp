@@ -17,13 +17,16 @@
 	<div id="" class="col-12 question center" style="font-size: 30px; padding: 0;">Puntuación</div>
 	<div id="puntuacion" class="col-12 question center" style="font-size: 35px;"> &#10029;&#10029;&#10025;&#10025;&#10025;</div>
 </div>
-<div class="row">
-	<audio id="player2" class="col-11 m-auto " controls="controls" preload="none">
+<div  class="row botonera">
+	<div id="detective-resolution" onclick="app.playDetectiveResolution()" class="col huge button">Conclusión</div>
+</div>
+<div class="row" style="margin-top: 10px;">
+	<audio id="player2" class="col-11 m-auto hidden" controls="controls" preload="none">
 		<source src="audio/audio13.mp3" type="audio/mpeg" />
 		Your browser does not support the audio element.
 	</audio>
 </div>
-<div id="bNext7" class="row botonera justify-content-end">
-	<div onclick="app.backToAudio()" class="col-5 huge button result-listen hidden">Volver</div>
-	<div onclick="app.thanks()" class="col-6 huge button ">Finalizar</div>
+<div id="bNext7" class="row botonera justify-content-between">
+	<div onclick="app.backToAudio()" class="col-4 huge button result-listen hidden">Volver</div>
+	<div id="credits-button" onclick="app.thanks()" class="col-7 huge button hidden">Finalizar</div>
 </div>

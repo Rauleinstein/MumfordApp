@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="20200115" id="com.raulalvarez.munfordapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget android-versionCode="2020021501" id="com.raulalvarez.munfordapp" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>El Caso Munford</name>
     <description>
 		Aplicación para la reproducción de audios de la exposición de El Caso Munford
@@ -16,8 +16,8 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <preference name="AndroidLaunchMode" value="singleInstance" />
     <preference name="DisallowOverscroll" value="true" />
+    <preference name="AndroidLaunchMode" value="singleInstance" />
     <preference name="KeepRunning" value="true" />
     <preference name="android-minSdkVersion" value="28" />
     <preference name="orientation" value="portrait" />

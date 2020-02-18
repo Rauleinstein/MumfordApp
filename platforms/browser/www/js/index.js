@@ -57,13 +57,15 @@ var app = {
 		$('#page8').load('p8.html');
 		$('#page9').load('p9.html');
 		$('#page10').load('p10.html');
-		var player = document.getElementById("player");
+		var player1 = document.getElementById("player1");
+		var player2 = document.getElementById("player2");
+		check_times = 0;
 		setTimeout(function() {
 			app.beginIntro();
 			// $('#page0').hide();
 			// $('#logo').hide();
 			// $('#personajes').hide();
-			// $('#page10').show('fast');
+			// $('#page8').show('fast');
 			// $('#page3').removeClass('opacity0');
 			// $('.suspect:not(.susbig)').removeClass('opacity0');
 		}, 2000);
@@ -97,11 +99,17 @@ var app = {
 		$('#start').addClass('pressed');
 		$('#page0').fadeOut('slow', function() {
 			$('#page1').fadeIn('slow');
+			app.startPuzzle(3);
 		});
 	},
 	play: function(mode) {
 		modo = mode;
-		$('#'+mode).addClass('pressed');
+		$('#' + mode).addClass('pressed');
+		if (modo == 'listen') {
+			$('#text-intro').html('Esta exposición plantea un enigma. Has decidido seguir los pasos del detective Johnson para que él te desvele todos los secretos. Acompaña al detective a través de la exposición y descubre a través de sus testimonios cómo descubrió al culpable.');
+		} else {
+			$('#text-intro').html('Esta exposición plantea un enigma, un reto, convirtiendote en detective y las imágenes en las piezas del puzzle que debes resolver. Observa los detalles, sigue las pistas y testimonios, y ayuda al detective Johnson a resolver el crimen.');
+		}
 		$('#page1').fadeOut('slow', function() {
 			$('#page2').fadeIn('slow');
 			$('#logo').fadeOut('slow');
@@ -117,40 +125,69 @@ var app = {
 		});
 	},
 
+	backToSelect: function () {
+		player1.pause();
+		player2.pause();
+		modo = '';
+		$('#page2').fadeOut('slow', function() {
+			$('#page1').fadeIn('slow');
+			$('#logo').fadeIn('slow');
+			$('#personajes').fadeIn('slow');
+			$('#b0').show();
+			$('#page2 > .botonera').css("display", "none").show().fadeOut('slow');
+			$('#bIntro').show('fast');
+			$('#player1').fadeOut('fast');
+		});
+	},
+
 	playIntro: function() {
-		$('#player').fadeIn('fast');
+		$('#player1').fadeIn('fast');
 		console.log(modo);
-		player.src = 'audio/' + modo + '0.mp3';
-		player.load();
-		player.play();
-		player.onended = function() {
+		player1.src = 'audio/' + modo + '0.mp3';
+		player1.load();
+		player2.pause();
+		player1.play();
+		player1.onended = function() {
 			$('#page2 > .botonera').css("display", "flex").hide().fadeIn('slow');
 			$('#b0').hide();
 		};
 	},
 
 	playAudio: function(numberAudio) {
-		console.log("Loading " + 'audio/'+ modo + numberAudio + '.mp3');
-		player.src = 'audio/'+ modo + numberAudio + '.mp3';
-		player.load();
-		player.play();
-		player.onended = function() {};
-		if (numberAudio == 6 && modo == 'game') {
-			app.startPuzzle(3);
-			$('#page2').fadeOut('slow', function() {
-				$('#page10').removeClass('opacity0');
-			});
-		}
+		console.log("Loading " + 'audio/' + modo + numberAudio + '.mp3');
+		player1.src = 'audio/' + modo + numberAudio + '.mp3';
+		player1.load();
+		player2.pause();
+		player1.play();
+		player1.onended = function() {
+			if (numberAudio == 9 && modo == 'game') {
+				$('#page2').fadeOut('slow', function() {
+					$('#page10').removeClass('opacity0');
+				});
+			}
+		};
 	},
 
 	resolution: function() {
-		$('#page2').fadeOut('slow', function() {
-			$('#page3').removeClass('opacity0');
-			$('.suspect:not(.susbig)').removeClass('opacity0');
-		});
+		player1.pause();
+		player2.pause();
+		if (modo == "game") {
+			$('#page2').fadeOut('slow', function() {
+				$('#page3').removeClass('opacity0');
+				$('.suspect:not(.susbig)').removeClass('opacity0');
+			});
+		} else {
+			$('#page2').fadeOut('slow', function() {
+				$('.result-'+modo).removeClass('hidden');
+				$('#page7').fadeIn('slow');
+			});
+		}
+
 	},
 
 	check_suspect: function(suspect) {
+		check_times++;
+		localStorage.setItem("check_times", check_times);
 		$('.susbig').attr('id', 'suspect' + suspect);
 		setTimeout(function() {
 			$('.susbig').removeClass('opacity0');
@@ -194,14 +231,89 @@ var app = {
 	},
 
 	motive: function(motive) {
+		localStorage.setItem('motive', motive);
+		app.score();
+		$('.result-'+modo).removeClass('hidden');
 		$('#motive' + motive).addClass('pressed');
 		$('#page6').fadeOut('slow', function() {
 			$('#page7').fadeIn('slow');
 		});
-		localStorage.setItem('motive', motive);
+	},
+
+	score: function() {
+		check_times = localStorage.getItem('check_times');
+		motivo = localStorage.getItem('motive');
+		ayudante = localStorage.getItem('helper');
+		llave = localStorage.getItem('key');
+		correct = '&#10004;';
+		wrong = '&#10008;';
+		starFull = '&#10029;';
+		starEmpty = '&#10025;';
+		puntuacion = 1;
+		if (check_times > 1) {
+			$('#asesino').html('Noah Willcox &#10004; ('+check_times+' intentos)');
+		} else {
+			puntuacion += 1;
+		}
+		switch(ayudante) {
+			case "1":
+				$('#ayudante').html('Crystal Munford '+correct);
+				puntuacion += 1;
+				break;
+			case "2":
+				$('#ayudante').html('Sebastian Munford '+wrong);
+				break;
+			case "3":
+				$('#ayudante').html('Allan Munford '+wrong);
+				break;
+			case "4":
+				$('#ayudante').html('Samuel Oakes '+wrong);
+				break;
+		}
+		switch(llave) {
+			case "1":
+				$('#llave').html('Habitación 227 '+wrong);
+				break;
+			case "2":
+				$('#llave').html('Habitación 312 '+correct);
+				puntuacion += 1;
+				break;
+			case "3":
+				$('#llave').html('Habitación 317 '+wrong);
+				break;
+			case "4":
+				$('#llave').html('Habitación 315 '+wrong);
+				break;
+		}
+		switch(motivo) {
+			case "1":
+				$('#motivo').html('Celos '+wrong);
+				break;
+			case "2":
+				$('#motivo').html('Económico '+correct);
+				puntuacion += 1;
+				break;
+			case "3":
+				$('#motivo').html('Envidia '+wrong);
+				break;
+			case "4":
+				$('#motivo').html('Ajuste de cuentas '+wrong);
+				break;
+		}
+		text_punt = "";
+		for (var i = 1; i <= 5; i++) {
+			if (i <= puntuacion) {
+				text_punt += starFull;
+			} else {
+				text_punt += starEmpty;
+			}
+		}
+		$('#puntuacion').html(text_punt);
 	},
 
 	thanks: function() {
+		player1.pause();
+		player2.pause();
 		$('#page7').fadeOut('slow', function() {
 			$('#page8').fadeIn('slow');
 		});
@@ -220,11 +332,17 @@ var app = {
 	},
 
 	backToAudio: function() {
+		$('#page3').addClass('opacity0');
 		$('#page10').addClass('opacity0');
+		$('#page7').fadeOut('slow');
+		$('.result-'+modo).addClass('hidden');
 		$('#page2').fadeIn('slow');
+		player1.pause();
+		player2.pause();
 	},
 
 	startPuzzle: function(x) {
+
 		console.log("puzzle started");
 		$('#pile').height($('#source_image').height());
 		$('#puzzle_solved').hide();
@@ -242,6 +360,20 @@ var app = {
 			$('#pile').height($('#source_image').height());
 			$('#source_image').snapPuzzle('refresh');
 		});
+	},
+
+	playDetectiveResolution: function () {
+		if (modo == 'game') {
+			$("#bNext7").removeClass('justify-content-between');
+			$("#bNext7").addClass('justify-content-end');
+		}
+		$('#player2').fadeIn('fast');
+		// $('#detective-resolution').fadeOut('fast');
+		$('#credits-button').removeClass('hidden');
+		player2.load();
+		player1.pause();
+		player2.play();
+
 	}
 
 };
