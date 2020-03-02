@@ -21,7 +21,6 @@ package com.raulalvarez.munfordapp;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
-
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
