@@ -46,6 +46,7 @@ var app = {
 	// Application Constructor
 	initialize: function() {
 		this.bindEvents();
+		MobileAccessibility.usePreferredTextZoom(false);
 		$('#page0').load('p0.html');
 		$('#page1').load('p1.html');
 		$('#page2').load('p2.html');

@@ -94,5 +94,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "phonegap-plugin-mobile-accessibility": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/phonegap/phonegap-mobile-accessibility.git"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

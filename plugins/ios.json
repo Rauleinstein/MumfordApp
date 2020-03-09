@@ -42,6 +42,9 @@
     },
     "cordova-plugin-vibration": {
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "phonegap-plugin-mobile-accessibility": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     }
   },
   "dependent_plugins": {

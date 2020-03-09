@@ -24,7 +24,8 @@
       "cordova-plugin-globalization": {},
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-network-information": {},
-      "cordova-plugin-vibration": {}
+      "cordova-plugin-vibration": {},
+      "phonegap-plugin-mobile-accessibility": {}
     },
     "platforms": [
       "ios",
@@ -34,6 +35,7 @@
   "dependencies": {
     "cordova-android": "^8.1.0",
     "cordova-ios": "^5.1.1",
-    "cypress": "^3.6.1"
+    "cypress": "^3.6.1",
+    "phonegap-plugin-mobile-accessibility": "git+https://github.com/phonegap/phonegap-mobile-accessibility.git"
   }
 }

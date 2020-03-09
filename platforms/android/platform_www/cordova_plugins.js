@@ -369,6 +369,22 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
         "navigator.notification",
         "navigator"
       ]
+    },
+    {
+      "id": "phonegap-plugin-mobile-accessibility.mobile-accessibility",
+      "file": "plugins/phonegap-plugin-mobile-accessibility/www/mobile-accessibility.js",
+      "pluginId": "phonegap-plugin-mobile-accessibility",
+      "clobbers": [
+        "window.MobileAccessibility"
+      ]
+    },
+    {
+      "id": "phonegap-plugin-mobile-accessibility.MobileAccessibilityNotifications",
+      "file": "plugins/phonegap-plugin-mobile-accessibility/www/MobileAccessibilityNotifications.js",
+      "pluginId": "phonegap-plugin-mobile-accessibility",
+      "clobbers": [
+        "MobileAccessibilityNotifications"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -382,6 +398,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-inappbrowser": "1.7.2",
     "cordova-plugin-media-capture": "1.4.3",
     "cordova-plugin-network-information": "1.3.4",
-    "cordova-plugin-vibration": "2.1.6"
+    "cordova-plugin-vibration": "2.1.6",
+    "phonegap-plugin-mobile-accessibility": "1.0.5-dev"
   };
 });

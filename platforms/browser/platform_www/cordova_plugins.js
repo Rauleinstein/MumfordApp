@@ -360,6 +360,36 @@ module.exports = [
             "navigator.notification",
             "navigator"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-device/www/device.js",
+        "id": "cordova-plugin-device.device",
+        "pluginId": "cordova-plugin-device",
+        "clobbers": [
+            "device"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
+        "id": "cordova-plugin-device.DeviceProxy",
+        "pluginId": "cordova-plugin-device",
+        "runs": true
+    },
+    {
+        "file": "plugins/phonegap-plugin-mobile-accessibility/www/mobile-accessibility.js",
+        "id": "phonegap-plugin-mobile-accessibility.mobile-accessibility",
+        "pluginId": "phonegap-plugin-mobile-accessibility",
+        "clobbers": [
+            "window.MobileAccessibility"
+        ]
+    },
+    {
+        "file": "plugins/phonegap-plugin-mobile-accessibility/www/MobileAccessibilityNotifications.js",
+        "id": "phonegap-plugin-mobile-accessibility.MobileAccessibilityNotifications",
+        "pluginId": "phonegap-plugin-mobile-accessibility",
+        "clobbers": [
+            "MobileAccessibilityNotifications"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -374,7 +404,9 @@ module.exports.metadata =
     "cordova-plugin-globalization": "1.0.9",
     "cordova-plugin-inappbrowser": "1.7.2",
     "cordova-plugin-network-information": "1.3.4",
-    "cordova-plugin-vibration": "2.1.6"
+    "cordova-plugin-vibration": "2.1.6",
+    "cordova-plugin-device": "1.1.7",
+    "phonegap-plugin-mobile-accessibility": "1.0.5-dev"
 }
 // BOTTOM OF METADATA
 });

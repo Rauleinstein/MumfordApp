@@ -39,6 +39,8 @@
 		C2BAEA25FA744E9AB3D4E63D /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 33832931D375430885C4683E /* CDVLocation.m */; };
 		D5DA414537484D5D8FA2D2B4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BC3312D9754610A50CF45D /* CoreTelephony.framework */; };
 		E6A8E506972D4E0E9A5F7053 /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F5634E15CE484BA37F4123 /* CDVLocalFilesystem.m */; };
+		CFF9040F45E24844B15D1E3E /* CDVMobileAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4871789572461096244A3A /* CDVMobileAccessibility.m */; };
+		DF8381DDE5C24A7EA138CACA /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61317EF31A94900913E5D4B /* MediaAccessibility.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +130,9 @@
 		F3D102561F4D4EB883E551AB /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "El Caso Munford/config.xml"; sourceTree = "<group>"; };
 		FC760562AF3E4113B1F825D3 /* CDVConnection.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVConnection.m; path = "cordova-plugin-network-information/CDVConnection.m"; sourceTree = "<group>"; };
+		0C4871789572461096244A3A /* CDVMobileAccessibility.m */ = {isa = PBXFileReference; name = "CDVMobileAccessibility.m"; path = "phonegap-plugin-mobile-accessibility/CDVMobileAccessibility.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		FA9085631DDD40EF9758B065 /* CDVMobileAccessibility.h */ = {isa = PBXFileReference; name = "CDVMobileAccessibility.h"; path = "phonegap-plugin-mobile-accessibility/CDVMobileAccessibility.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D61317EF31A94900913E5D4B /* MediaAccessibility.framework */ = {isa = PBXFileReference; name = "MediaAccessibility.framework"; path = "System/Library/Frameworks/MediaAccessibility.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +148,7 @@
 				3D42A93C5CFF424D88F6021C /* AudioToolbox.framework in Frameworks */,
 				78898797E3E04D42A9B5F751 /* SystemConfiguration.framework in Frameworks */,
 				D5DA414537484D5D8FA2D2B4 /* CoreTelephony.framework in Frameworks */,
+				DF8381DDE5C24A7EA138CACA /* MediaAccessibility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +228,7 @@
 				BD1B03425C3D4C5196B96855 /* AudioToolbox.framework */,
 				94EFC423DAD34EF1BFED00C8 /* SystemConfiguration.framework */,
 				97BC3312D9754610A50CF45D /* CoreTelephony.framework */,
+				D61317EF31A94900913E5D4B /* MediaAccessibility.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -281,6 +288,8 @@
 				0170C6409D894E7CADE5E66B /* CDVReachability.h */,
 				77FF4147598C43C6B1B2F150 /* CDVVibration.m */,
 				DF60E8893D5D41909F59BCD6 /* CDVVibration.h */,
+				0C4871789572461096244A3A /* CDVMobileAccessibility.m */,
+				FA9085631DDD40EF9758B065 /* CDVMobileAccessibility.h */,
 			);
 			name = Plugins;
 			path = "El Caso Munford/Plugins";
@@ -446,6 +455,7 @@
 				7D457484FD20475793CB98CE /* CDVConnection.m in Sources */,
 				3A86347286BD45E9BC15B016 /* CDVReachability.m in Sources */,
 				9FF4274F8B4240749DE8DD0C /* CDVVibration.m in Sources */,
+				CFF9040F45E24844B15D1E3E /* CDVMobileAccessibility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +480,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 55;
+				CURRENT_PROJECT_VERSION = 67;
 				DEVELOPMENT_TEAM = ZB7EM4A78T;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -501,7 +511,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 55;
+				CURRENT_PROJECT_VERSION = 67;
 				DEVELOPMENT_TEAM = ZB7EM4A78T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "El Caso Munford/El Caso Munford-Prefix.pch";

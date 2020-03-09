@@ -30,6 +30,9 @@
     },
     "cordova-plugin-vibration": {
       "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "phonegap-plugin-mobile-accessibility": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   },
   "dependent_plugins": {
@@ -38,6 +41,9 @@
     },
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   }
 }

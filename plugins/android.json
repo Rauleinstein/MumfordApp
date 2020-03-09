@@ -36,6 +36,9 @@
     },
     "cordova-plugin-vibration": {
       "PACKAGE_NAME": "com.raulalvarez.munfordapp"
+    },
+    "phonegap-plugin-mobile-accessibility": {
+      "PACKAGE_NAME": "com.raulalvarez.munfordapp"
     }
   },
   "dependent_plugins": {
