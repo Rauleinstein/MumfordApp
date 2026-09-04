@@ -35,7 +35,7 @@
   "dependencies": {
     "cordova-android": "^8.1.0",
     "cordova-ios": "^5.1.1",
-    "cypress": "^3.6.1",
+    "cypress": "^16.0.0",
     "phonegap-plugin-mobile-accessibility": "git+https://github.com/phonegap/phonegap-mobile-accessibility.git"
   }
 }
